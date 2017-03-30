@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  NTMainViewController.h
 //  GiftyApp
 //
 //  Created by Nikita Teslyuk on 30.03.17.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface NTMainViewController : UIViewController
 
 @end
-
