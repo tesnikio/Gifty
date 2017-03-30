@@ -44,4 +44,12 @@
     return [NSString stringWithFormat:@"%ld", row + 1];
 }
 
+#pragma mark - UIPickerViewDelegate
+
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+    
+    self.delegate.ageField.text = [self pickerView:self.agePicker titleForRow:row forComponent:component];
+    
+}
+
 @end

@@ -73,6 +73,10 @@
     return UIModalPresentationNone;
 }
 
+#pragma mark - Actions
+
 - (IBAction)searchButtonAction:(UIButton *)sender {
+    
 }
+
 @end
