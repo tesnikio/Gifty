@@ -24,14 +24,39 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    
+    if ([segue.identifier isEqualToString:@"showSex"]) {
+        NTSexViewController *controller = segue.destinationViewController;
+        UIPopoverPresentationController *popController = [controller popoverPresentationController];
+        popController.permittedArrowDirections = UIPopoverArrowDirectionDown;
+        controller.delegate = self;
+        controller.popoverPresentationController.delegate = self;
+        controller.preferredContentSize = CGSizeMake(200.f, 88.f);
+    }
 }
-*/
 
+#pragma mark - UITextFieldDelegate
+
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
+    
+    if ([textField isEqual:self.sexField]) {
+        [self performSegueWithIdentifier:@"showSex" sender:textField];
+        return NO;
+    }
+    
+    return YES;
+}
+
+#pragma mark - UIPopoverPresentationControllerDelegate
+
+- (UIModalPresentationStyle)adaptivePresentationStyleForPresentationController:(UIPresentationController *)controller traitCollection:(UITraitCollection *)traitCollection {
+    return UIModalPresentationNone;
+}
+
+- (IBAction)searchButtonAction:(UIButton *)sender {
+}
 @end

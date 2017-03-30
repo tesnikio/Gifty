@@ -13,6 +13,7 @@
 		4CD3DF751E8D6C7000E91F19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD3DF741E8D6C7000E91F19 /* Assets.xcassets */; };
 		4CD3DF781E8D6C7000E91F19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD3DF761E8D6C7000E91F19 /* LaunchScreen.storyboard */; };
 		4CD3DF811E8D6D6600E91F19 /* NTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD3DF801E8D6D6600E91F19 /* NTMainViewController.m */; };
+		4CD3DF841E8D6F7800E91F19 /* NTSexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD3DF831E8D6F7800E91F19 /* NTSexViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		4CD3DF791E8D6C7000E91F19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CD3DF7F1E8D6D6600E91F19 /* NTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTMainViewController.h; sourceTree = "<group>"; };
 		4CD3DF801E8D6D6600E91F19 /* NTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTMainViewController.m; sourceTree = "<group>"; };
+		4CD3DF821E8D6F7800E91F19 /* NTSexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTSexViewController.h; sourceTree = "<group>"; };
+		4CD3DF831E8D6F7800E91F19 /* NTSexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTSexViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				4CD3DF801E8D6D6600E91F19 /* NTMainViewController.m */,
 				4CD3DF711E8D6C7000E91F19 /* Main.storyboard */,
 				4CD3DF681E8D6C7000E91F19 /* Supporting Files */,
+				4CD3DF821E8D6F7800E91F19 /* NTSexViewController.h */,
+				4CD3DF831E8D6F7800E91F19 /* NTSexViewController.m */,
 			);
 			path = GiftyApp;
 			sourceTree = "<group>";
@@ -152,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CD3DF6D1E8D6C7000E91F19 /* AppDelegate.m in Sources */,
+				4CD3DF841E8D6F7800E91F19 /* NTSexViewController.m in Sources */,
 				4CD3DF6A1E8D6C7000E91F19 /* main.m in Sources */,
 				4CD3DF811E8D6D6600E91F19 /* NTMainViewController.m in Sources */,
 			);

@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NTSexViewController.h"
 
-@interface NTMainViewController : UIViewController
+@interface NTMainViewController : UIViewController <UITextFieldDelegate, UIPopoverPresentationControllerDelegate, NTSexViewControllerDelegate>
+
+@property (weak, nonatomic) IBOutlet UITextField *sexField;
+@property (weak, nonatomic) IBOutlet UITextField *ageField;
+@property (weak, nonatomic) IBOutlet UITextField *occasionField;
+
+@property (strong, nonatomic) NSIndexPath *selectedRowAtIndexPath;
+
+- (IBAction)searchButtonAction:(UIButton *)sender;
 
 @end
