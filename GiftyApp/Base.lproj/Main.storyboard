@@ -196,10 +196,10 @@
             </objects>
             <point key="canvasLocation" x="931" y="-17"/>
         </scene>
-        <!--View Controller-->
+        <!--Age View Controller-->
         <scene sceneID="yTT-LU-xdC">
             <objects>
-                <viewController id="VJh-Hf-VXX" sceneMemberID="viewController">
+                <viewController id="VJh-Hf-VXX" customClass="NTAgeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BZw-Q0-AE9"/>
                         <viewControllerLayoutGuide type="bottom" id="WS9-ms-Jyt"/>
@@ -211,12 +211,19 @@
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ruw-MP-R0a">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="VJh-Hf-VXX" id="iDL-pm-3bN"/>
+                                    <outlet property="delegate" destination="VJh-Hf-VXX" id="IdX-V5-Qdz"/>
+                                </connections>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="216"/>
+                    <connections>
+                        <outlet property="agePicker" destination="Ruw-MP-R0a" id="xxT-BF-rFz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ORb-FK-NDM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

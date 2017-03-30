@@ -30,12 +30,25 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
     if ([segue.identifier isEqualToString:@"showSex"]) {
+        
         NTSexViewController *controller = segue.destinationViewController;
         UIPopoverPresentationController *popController = [controller popoverPresentationController];
         popController.permittedArrowDirections = UIPopoverArrowDirectionDown;
+        popController.sourceRect = CGRectMake(CGRectGetMidX(self.sexField.bounds), CGRectGetMidY(self.sexField.bounds), 0, 0);
         controller.delegate = self;
         controller.popoverPresentationController.delegate = self;
         controller.preferredContentSize = CGSizeMake(200.f, 88.f);
+        
+    } else if ([segue.identifier isEqualToString:@"showAge"]) {
+        
+        NTAgeViewController *controller = segue.destinationViewController;
+        UIPopoverPresentationController *popController = [controller popoverPresentationController];
+        popController.permittedArrowDirections = UIPopoverArrowDirectionDown;
+        popController.sourceRect = CGRectMake(CGRectGetMidX(self.ageField.bounds), CGRectGetMidY(self.ageField.bounds), 0, 0);
+        controller.delegate = self;
+        controller.popoverPresentationController.delegate = self;
+        controller.preferredContentSize = CGSizeMake(375.f, 216.f);
+        
     }
 }
 
@@ -45,6 +58,9 @@
     
     if ([textField isEqual:self.sexField]) {
         [self performSegueWithIdentifier:@"showSex" sender:textField];
+        return NO;
+    } else if ([textField isEqual:self.ageField]) {
+        [self performSegueWithIdentifier:@"showAge" sender:textField];
         return NO;
     }
     
