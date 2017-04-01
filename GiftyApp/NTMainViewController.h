@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "NTSexViewController.h"
 #import "NTAgeViewController.h"
+#import "NTOccasionViewController.h"
 
-@interface NTMainViewController : UIViewController <UITextFieldDelegate, UIPopoverPresentationControllerDelegate, NTSexViewControllerDelegate, NTAgeViewControllerDelegate>
+@interface NTMainViewController : UIViewController <UITextFieldDelegate, UIPopoverPresentationControllerDelegate, NTSexViewControllerDelegate, NTAgeViewControllerDelegate, NTOccasionViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *sexField;
 @property (weak, nonatomic) IBOutlet UITextField *ageField;

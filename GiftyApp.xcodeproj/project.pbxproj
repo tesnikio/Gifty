@@ -15,6 +15,7 @@
 		4CD3DF811E8D6D6600E91F19 /* NTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD3DF801E8D6D6600E91F19 /* NTMainViewController.m */; };
 		4CD3DF841E8D6F7800E91F19 /* NTSexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD3DF831E8D6F7800E91F19 /* NTSexViewController.m */; };
 		4CD3DF871E8D76FC00E91F19 /* NTAgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD3DF861E8D76FC00E91F19 /* NTAgeViewController.m */; };
+		4CD3DF8A1E8EAC4A00E91F19 /* NTOccasionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD3DF891E8EAC4A00E91F19 /* NTOccasionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		4CD3DF831E8D6F7800E91F19 /* NTSexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTSexViewController.m; sourceTree = "<group>"; };
 		4CD3DF851E8D76FC00E91F19 /* NTAgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTAgeViewController.h; sourceTree = "<group>"; };
 		4CD3DF861E8D76FC00E91F19 /* NTAgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTAgeViewController.m; sourceTree = "<group>"; };
+		4CD3DF881E8EAC4A00E91F19 /* NTOccasionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTOccasionViewController.h; sourceTree = "<group>"; };
+		4CD3DF891E8EAC4A00E91F19 /* NTOccasionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTOccasionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,8 @@
 				4CD3DF831E8D6F7800E91F19 /* NTSexViewController.m */,
 				4CD3DF851E8D76FC00E91F19 /* NTAgeViewController.h */,
 				4CD3DF861E8D76FC00E91F19 /* NTAgeViewController.m */,
+				4CD3DF881E8EAC4A00E91F19 /* NTOccasionViewController.h */,
+				4CD3DF891E8EAC4A00E91F19 /* NTOccasionViewController.m */,
 			);
 			path = GiftyApp;
 			sourceTree = "<group>";
@@ -166,6 +171,7 @@
 				4CD3DF6A1E8D6C7000E91F19 /* main.m in Sources */,
 				4CD3DF811E8D6D6600E91F19 /* NTMainViewController.m in Sources */,
 				4CD3DF871E8D76FC00E91F19 /* NTAgeViewController.m in Sources */,
+				4CD3DF8A1E8EAC4A00E91F19 /* NTOccasionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

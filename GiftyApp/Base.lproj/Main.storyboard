@@ -80,6 +80,9 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="YuM-GA-dYF" id="BwW-su-eEr"/>
+                                    <segue destination="RXr-IG-KDH" kind="popoverPresentation" identifier="showOccasion" popoverAnchorView="1zN-zG-CLh" id="qXP-Xy-EWE">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMx-om-SUP">
@@ -194,7 +197,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZR8-Ft-9Y8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="931" y="-17"/>
+            <point key="canvasLocation" x="997" y="-17"/>
         </scene>
         <!--Age View Controller-->
         <scene sceneID="yTT-LU-xdC">
@@ -227,7 +230,41 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ORb-FK-NDM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057" y="264"/>
+            <point key="canvasLocation" x="1137" y="211"/>
+        </scene>
+        <!--Occasion View Controller-->
+        <scene sceneID="Jah-Ca-zuK">
+            <objects>
+                <viewController id="RXr-IG-KDH" customClass="NTOccasionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="o0X-F6-nJ3"/>
+                        <viewControllerLayoutGuide type="bottom" id="RLK-Oe-u12"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nRY-Gw-Wot">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jFL-qe-Yge">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="RXr-IG-KDH" id="c8C-Cr-H1R"/>
+                                    <outlet property="delegate" destination="RXr-IG-KDH" id="Jj5-Yb-vLc"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="375" height="216"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="216"/>
+                    <connections>
+                        <outlet property="occasionPicker" destination="jFL-qe-Yge" id="eSn-Dj-cH0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Je6-Qu-ADk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1137" y="483"/>
         </scene>
     </scenes>
     <resources>
