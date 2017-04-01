@@ -68,6 +68,21 @@
         controller.preferredContentSize = CGSizeMake(375.f, 216.f);
         
     }
+    
+    if (([self.sexField.text isEqualToString:@""] || [self.ageField.text isEqualToString:@""] || [self.occasionField.text isEqualToString:@""]) && [segue.identifier isEqualToString:@"showGifts"]) {
+        
+        
+    }
+}
+
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+    
+    if (([self.sexField.text isEqualToString:@""] || [self.ageField.text isEqualToString:@""] || [self.occasionField.text isEqualToString:@""]) && [identifier isEqualToString:@"showGifts"]) {
+        
+        return NO;
+    }
+    
+    return YES;
 }
 
 #pragma mark - UITextFieldDelegate
@@ -97,6 +112,12 @@
 #pragma mark - Actions
 
 - (IBAction)searchButtonAction:(UIButton *)sender {
+    
+    if ([self.sexField.text isEqualToString:@""] || [self.ageField.text isEqualToString:@""] || [self.occasionField.text isEqualToString:@""]) {
+        
+        
+        
+    }
     
 }
 

@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *sexField;
 @property (weak, nonatomic) IBOutlet UITextField *ageField;
 @property (weak, nonatomic) IBOutlet UITextField *occasionField;
+@property (weak, nonatomic) IBOutlet UIButton *searchButton;
 
 @property (strong, nonatomic) NSIndexPath *selectedRowAtIndexPath;
 
