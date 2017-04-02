@@ -67,9 +67,8 @@
         controller.popoverPresentationController.delegate = self;
         controller.preferredContentSize = CGSizeMake(375.f, 216.f);
         
-    }
-    
-    if (([self.sexField.text isEqualToString:@""] || [self.ageField.text isEqualToString:@""] || [self.occasionField.text isEqualToString:@""]) && [segue.identifier isEqualToString:@"showGifts"]) {
+    } else if ([segue.identifier isEqualToString:@"showGifts"]) {
+        
         
         
     }
