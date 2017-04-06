@@ -11,6 +11,7 @@
 
 @interface NTGiftViewController ()
 
+
 @end
 
 @implementation NTGiftViewController
@@ -19,7 +20,6 @@ static NSString * const reuseIdentifier = @"GiftCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     
     
 }
@@ -42,7 +42,7 @@ static NSString * const reuseIdentifier = @"GiftCell";
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 13;
+    return 5;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {

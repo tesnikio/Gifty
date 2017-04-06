@@ -166,7 +166,7 @@
                             <size key="itemSize" width="170" height="170"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                            <inset key="sectionInset" minX="12" minY="10" maxX="12" maxY="10"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GiftCell" id="R5y-Hc-WCm" customClass="NTGiftCell">
@@ -175,23 +175,13 @@
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idea" translatesAutoresizingMaskIntoConstraints="NO" id="Epj-ca-eXz">
-                                            <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="180" id="M9I-ro-dZJ"/>
-                                                <constraint firstAttribute="width" constant="180" id="q64-hd-Viu"/>
-                                            </constraints>
-                                        </imageView>
-                                    </subviews>
                                 </view>
-                                <constraints>
-                                    <constraint firstItem="Epj-ca-eXz" firstAttribute="leading" secondItem="R5y-Hc-WCm" secondAttribute="leading" id="5Z4-Ts-8S3"/>
-                                    <constraint firstAttribute="bottom" secondItem="Epj-ca-eXz" secondAttribute="bottom" id="94J-gd-Zhd"/>
-                                    <constraint firstItem="Epj-ca-eXz" firstAttribute="top" secondItem="R5y-Hc-WCm" secondAttribute="top" id="GWX-8D-yDY"/>
-                                    <constraint firstAttribute="trailing" secondItem="Epj-ca-eXz" secondAttribute="trailing" id="pyr-pS-3LD"/>
-                                </constraints>
                                 <size key="customSize" width="180" height="180"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -203,7 +193,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mB1-LX-O4d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1910" y="466"/>
+            <point key="canvasLocation" x="1909.5999999999999" y="465.51724137931041"/>
         </scene>
         <!--Sex View Controller-->
         <scene sceneID="AlR-fa-WHF">
@@ -224,7 +214,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Мужчина" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pAC-zR-YIU">
-                                                    <rect key="frame" x="15" y="0.0" width="170" height="43.5"/>
+                                                    <rect key="frame" x="16" y="0.0" width="169" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -241,7 +231,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Женщина" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Tlq-6o-vEw">
-                                                    <rect key="frame" x="15" y="0.0" width="170" height="43.5"/>
+                                                    <rect key="frame" x="16" y="0.0" width="169" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -336,7 +326,6 @@
     </scenes>
     <resources>
         <image name="Logo" width="515" height="729"/>
-        <image name="idea" width="512" height="512"/>
         <image name="loupe" width="128" height="128"/>
         <image name="screen" width="375" height="667"/>
         <image name="textField" width="500" height="75"/>

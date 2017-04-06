@@ -18,6 +18,14 @@
 		4CD3DF8A1E8EAC4A00E91F19 /* NTOccasionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD3DF891E8EAC4A00E91F19 /* NTOccasionViewController.m */; };
 		4CD3E0241E93B48500E91F19 /* NTGiftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD3E0231E93B48500E91F19 /* NTGiftViewController.m */; };
 		4CD3E0271E93BA0300E91F19 /* NTGiftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD3E0261E93BA0300E91F19 /* NTGiftCell.m */; };
+		4CD3E08C1E95502800E91F19 /* Female16-.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD3E0841E95502800E91F19 /* Female16-.xcassets */; };
+		4CD3E08D1E95502800E91F19 /* Female16-30.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD3E0851E95502800E91F19 /* Female16-30.xcassets */; };
+		4CD3E08E1E95502800E91F19 /* Female30-50.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD3E0861E95502800E91F19 /* Female30-50.xcassets */; };
+		4CD3E08F1E95502800E91F19 /* Female50+.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD3E0871E95502800E91F19 /* Female50+.xcassets */; };
+		4CD3E0901E95502800E91F19 /* Male16-.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD3E0881E95502800E91F19 /* Male16-.xcassets */; };
+		4CD3E0911E95502800E91F19 /* Male16-30.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD3E0891E95502800E91F19 /* Male16-30.xcassets */; };
+		4CD3E0921E95502800E91F19 /* Male30-50.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD3E08A1E95502800E91F19 /* Male30-50.xcassets */; };
+		4CD3E0931E95502800E91F19 /* Male50+.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD3E08B1E95502800E91F19 /* Male50+.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +49,14 @@
 		4CD3E0231E93B48500E91F19 /* NTGiftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTGiftViewController.m; sourceTree = "<group>"; };
 		4CD3E0251E93BA0300E91F19 /* NTGiftCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTGiftCell.h; sourceTree = "<group>"; };
 		4CD3E0261E93BA0300E91F19 /* NTGiftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTGiftCell.m; sourceTree = "<group>"; };
+		4CD3E0841E95502800E91F19 /* Female16-.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Female16-.xcassets"; path = "GiftyApp/Female16-.xcassets"; sourceTree = "<group>"; };
+		4CD3E0851E95502800E91F19 /* Female16-30.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Female16-30.xcassets"; path = "GiftyApp/Female16-30.xcassets"; sourceTree = "<group>"; };
+		4CD3E0861E95502800E91F19 /* Female30-50.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Female30-50.xcassets"; path = "GiftyApp/Female30-50.xcassets"; sourceTree = "<group>"; };
+		4CD3E0871E95502800E91F19 /* Female50+.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Female50+.xcassets"; path = "GiftyApp/Female50+.xcassets"; sourceTree = "<group>"; };
+		4CD3E0881E95502800E91F19 /* Male16-.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Male16-.xcassets"; path = "GiftyApp/Male16-.xcassets"; sourceTree = "<group>"; };
+		4CD3E0891E95502800E91F19 /* Male16-30.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Male16-30.xcassets"; path = "GiftyApp/Male16-30.xcassets"; sourceTree = "<group>"; };
+		4CD3E08A1E95502800E91F19 /* Male30-50.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Male30-50.xcassets"; path = "GiftyApp/Male30-50.xcassets"; sourceTree = "<group>"; };
+		4CD3E08B1E95502800E91F19 /* Male50+.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Male50+.xcassets"; path = "GiftyApp/Male50+.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +92,7 @@
 				4CD3DF9F1E913B7A00E91F19 /* Cells */,
 				4CD3DF8C1E8FBC4C00E91F19 /* Controllers */,
 				4CD3DF711E8D6C7000E91F19 /* Main.storyboard */,
+				4CD3E0411E951F7F00E91F19 /* Assets */,
 				4CD3DF681E8D6C7000E91F19 /* Supporting Files */,
 			);
 			path = GiftyApp;
@@ -126,6 +143,22 @@
 				4CD3E0261E93BA0300E91F19 /* NTGiftCell.m */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		4CD3E0411E951F7F00E91F19 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				4CD3E0841E95502800E91F19 /* Female16-.xcassets */,
+				4CD3E0851E95502800E91F19 /* Female16-30.xcassets */,
+				4CD3E0861E95502800E91F19 /* Female30-50.xcassets */,
+				4CD3E0871E95502800E91F19 /* Female50+.xcassets */,
+				4CD3E0881E95502800E91F19 /* Male16-.xcassets */,
+				4CD3E0891E95502800E91F19 /* Male16-30.xcassets */,
+				4CD3E08A1E95502800E91F19 /* Male30-50.xcassets */,
+				4CD3E08B1E95502800E91F19 /* Male50+.xcassets */,
+			);
+			name = Assets;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,9 +220,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CD3E08F1E95502800E91F19 /* Female50+.xcassets in Resources */,
+				4CD3E08C1E95502800E91F19 /* Female16-.xcassets in Resources */,
+				4CD3E0921E95502800E91F19 /* Male30-50.xcassets in Resources */,
 				4CD3DF781E8D6C7000E91F19 /* LaunchScreen.storyboard in Resources */,
+				4CD3E0931E95502800E91F19 /* Male50+.xcassets in Resources */,
+				4CD3E0911E95502800E91F19 /* Male16-30.xcassets in Resources */,
 				4CD3DF751E8D6C7000E91F19 /* Assets.xcassets in Resources */,
+				4CD3E08D1E95502800E91F19 /* Female16-30.xcassets in Resources */,
 				4CD3DF731E8D6C7000E91F19 /* Main.storyboard in Resources */,
+				4CD3E08E1E95502800E91F19 /* Female30-50.xcassets in Resources */,
+				4CD3E0901E95502800E91F19 /* Male16-.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
