@@ -92,7 +92,7 @@
                                     <constraint firstAttribute="width" constant="44" id="xy1-qo-1eG"/>
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" image="loupe"/>
+                                <state key="normal" image="search-circular-button"/>
                                 <connections>
                                     <action selector="searchButtonAction:" destination="YuM-GA-dYF" eventType="touchUpInside" id="eik-dc-rV9"/>
                                     <segue destination="xuw-lU-e5E" kind="show" id="D0f-pW-YZi"/>
@@ -214,7 +214,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Мужчина" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pAC-zR-YIU">
-                                                    <rect key="frame" x="16" y="0.0" width="169" height="43.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="170" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -231,7 +231,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Женщина" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Tlq-6o-vEw">
-                                                    <rect key="frame" x="16" y="0.0" width="169" height="43.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="170" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -326,8 +326,8 @@
     </scenes>
     <resources>
         <image name="Logo" width="515" height="729"/>
-        <image name="loupe" width="128" height="128"/>
         <image name="screen" width="375" height="667"/>
+        <image name="search-circular-button" width="256" height="256"/>
         <image name="textField" width="500" height="75"/>
     </resources>
 </document>

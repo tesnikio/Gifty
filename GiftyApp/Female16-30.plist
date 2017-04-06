@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Item  - 1</key>
+	<dict>
+		<key>Caption</key>
+		<string>Чехол для средств личной гигиены</string>
+		<key>Photo</key>
+		<string>бас16-30</string>
+	</dict>
+	<key>Item  - 2</key>
+	<dict>
+		<key>Caption</key>
+		<string>Дизайнерский светильник</string>
+		<key>Photo</key>
+		<string>бра16-30</string>
+	</dict>
+	<key>Item  - 3</key>
+	<dict>
+		<key>Caption</key>
+		<string>Плетеный браслет</string>
+		<key>Photo</key>
+		<string>браслет16-30</string>
+	</dict>
+	<key>Item  - 4</key>
+	<dict>
+		<key>Caption</key>
+		<string>Брошь на одежку/рюкзак</string>
+		<key>Photo</key>
+		<string>брошь16-30</string>
+	</dict>
+	<key>Item  - 5</key>
+	<dict>
+		<key>Caption</key>
+		<string>Банка для напитков</string>
+		<key>Photo</key>
+		<string>бутылка16-30</string>
+	</dict>
+	<key>Item  - 6</key>
+	<dict>
+		<key>Caption</key>
+		<string>Декоративная вешалка</string>
+		<key>Photo</key>
+		<string>вешалка16-30</string>
+	</dict>
+	<key>Item  - 7</key>
+	<dict>
+		<key>Caption</key>
+		<string>Горшок для домашних растений</string>
+		<key>Photo</key>
+		<string>горшки16-30</string>
+	</dict>
+	<key>Item  - 8</key>
+	<dict>
+		<key>Caption</key>
+		<string>Настольное зеркало</string>
+		<key>Photo</key>
+		<string>зеркало16-30</string>
+	</dict>
+	<key>Item  - 9</key>
+	<dict>
+		<key>Caption</key>
+		<string>Инстабук для фото из Instagram</string>
+		<key>Photo</key>
+		<string>инстабук16-30</string>
+	</dict>
+	<key>Item  - 10</key>
+	<dict>
+		<key>Caption</key>
+		<string>Набор карандашей</string>
+		<key>Photo</key>
+		<string>карандаш16-30</string>
+	</dict>
+	<key>Item  - 11</key>
+	<dict>
+		<key>Caption</key>
+		<string>Лампочка-светильник</string>
+		<key>Photo</key>
+		<string>лампочка16-30</string>
+	</dict>
+	<key>Item  - 12</key>
+	<dict>
+		<key>Caption</key>
+		<string>Набор для приготовления мохито</string>
+		<key>Photo</key>
+		<string>мохито16-30</string>
+	</dict>
+	<key>Item  - 13</key>
+	<dict>
+		<key>Caption</key>
+		<string>Подставка для ванной</string>
+		<key>Photo</key>
+		<string>подставка для ванной16-30</string>
+	</dict>
+	<key>Item  - 14</key>
+	<dict>
+		<key>Caption</key>
+		<string>Набор подтяжек и бабочек</string>
+		<key>Photo</key>
+		<string>подтяжки16-30</string>
+	</dict>
+	<key>Item  - 15</key>
+	<dict>
+		<key>Caption</key>
+		<string>Держатель украшений</string>
+		<key>Photo</key>
+		<string>рука16-30</string>
+	</dict>
+	<key>Item  - 16</key>
+	<dict>
+		<key>Caption</key>
+		<string>Рюкзак-сумка</string>
+		<key>Photo</key>
+		<string>рюкзак16-30</string>
+	</dict>
+	<key>Item  - 17</key>
+	<dict>
+		<key>Caption</key>
+		<string>Стакан для напитков</string>
+		<key>Photo</key>
+		<string>стакан16-30</string>
+	</dict>
+	<key>Item  - 18</key>
+	<dict>
+		<key>Caption</key>
+		<string>Столик-подставка</string>
+		<key>Photo</key>
+		<string>столик16-30</string>
+	</dict>
+	<key>Item  - 19</key>
+	<dict>
+		<key>Caption</key>
+		<string>Переводное тату</string>
+		<key>Photo</key>
+		<string>тату16-30</string>
+	</dict>
+	<key>Item  - 20</key>
+	<dict>
+		<key>Caption</key>
+		<string>Посуда для завтраков</string>
+		<key>Photo</key>
+		<string>термос16-30</string>
+	</dict>
+	<key>Item  - 21</key>
+	<dict>
+		<key>Caption</key>
+		<string>Чехол для чемодана</string>
+		<key>Photo</key>
+		<string>чехол16-30</string>
+	</dict>
+	<key>Item  - 22</key>
+	<dict>
+		<key>Caption</key>
+		<string>Шкатулка для мелких вещей</string>
+		<key>Photo</key>
+		<string>шкатулка16-30</string>
+	</dict>
+</dict>
+</plist>

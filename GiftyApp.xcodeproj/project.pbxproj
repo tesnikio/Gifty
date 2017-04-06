@@ -26,6 +26,10 @@
 		4CD3E0911E95502800E91F19 /* Male16-30.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD3E0891E95502800E91F19 /* Male16-30.xcassets */; };
 		4CD3E0921E95502800E91F19 /* Male30-50.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD3E08A1E95502800E91F19 /* Male30-50.xcassets */; };
 		4CD3E0931E95502800E91F19 /* Male50+.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD3E08B1E95502800E91F19 /* Male50+.xcassets */; };
+		4CD3E0951E96BC5900E91F19 /* Female16-.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CD3E0941E96BC5900E91F19 /* Female16-.plist */; };
+		4CD3E0971E96C29600E91F19 /* Female16-30.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CD3E0961E96C29600E91F19 /* Female16-30.plist */; };
+		4CD3E09A1E96C89800E91F19 /* Female30-50.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CD3E0991E96C89800E91F19 /* Female30-50.plist */; };
+		4CD3E09C1E96D0FC00E91F19 /* Female50+.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CD3E09B1E96D0FC00E91F19 /* Female50+.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +38,7 @@
 		4CD3DF6B1E8D6C7000E91F19 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4CD3DF6C1E8D6C7000E91F19 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4CD3DF721E8D6C7000E91F19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4CD3DF741E8D6C7000E91F19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4CD3DF741E8D6C7000E91F19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = GiftyApp/Assets.xcassets; sourceTree = "<group>"; };
 		4CD3DF771E8D6C7000E91F19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CD3DF791E8D6C7000E91F19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CD3DF7F1E8D6D6600E91F19 /* NTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTMainViewController.h; sourceTree = "<group>"; };
@@ -57,6 +61,10 @@
 		4CD3E0891E95502800E91F19 /* Male16-30.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Male16-30.xcassets"; path = "GiftyApp/Male16-30.xcassets"; sourceTree = "<group>"; };
 		4CD3E08A1E95502800E91F19 /* Male30-50.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Male30-50.xcassets"; path = "GiftyApp/Male30-50.xcassets"; sourceTree = "<group>"; };
 		4CD3E08B1E95502800E91F19 /* Male50+.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Male50+.xcassets"; path = "GiftyApp/Male50+.xcassets"; sourceTree = "<group>"; };
+		4CD3E0941E96BC5900E91F19 /* Female16-.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Female16-.plist"; sourceTree = "<group>"; };
+		4CD3E0961E96C29600E91F19 /* Female16-30.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Female16-30.plist"; sourceTree = "<group>"; };
+		4CD3E0991E96C89800E91F19 /* Female30-50.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Female30-50.plist"; sourceTree = "<group>"; };
+		4CD3E09B1E96D0FC00E91F19 /* Female50+.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Female50+.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +100,7 @@
 				4CD3DF9F1E913B7A00E91F19 /* Cells */,
 				4CD3DF8C1E8FBC4C00E91F19 /* Controllers */,
 				4CD3DF711E8D6C7000E91F19 /* Main.storyboard */,
+				4CD3E0981E96C2A500E91F19 /* Property Lists */,
 				4CD3E0411E951F7F00E91F19 /* Assets */,
 				4CD3DF681E8D6C7000E91F19 /* Supporting Files */,
 			);
@@ -103,7 +112,6 @@
 			children = (
 				4CD3DF6B1E8D6C7000E91F19 /* AppDelegate.h */,
 				4CD3DF6C1E8D6C7000E91F19 /* AppDelegate.m */,
-				4CD3DF741E8D6C7000E91F19 /* Assets.xcassets */,
 				4CD3DF761E8D6C7000E91F19 /* LaunchScreen.storyboard */,
 				4CD3DF791E8D6C7000E91F19 /* Info.plist */,
 				4CD3DF691E8D6C7000E91F19 /* main.m */,
@@ -148,6 +156,7 @@
 		4CD3E0411E951F7F00E91F19 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				4CD3DF741E8D6C7000E91F19 /* Assets.xcassets */,
 				4CD3E0841E95502800E91F19 /* Female16-.xcassets */,
 				4CD3E0851E95502800E91F19 /* Female16-30.xcassets */,
 				4CD3E0861E95502800E91F19 /* Female30-50.xcassets */,
@@ -159,6 +168,17 @@
 			);
 			name = Assets;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		4CD3E0981E96C2A500E91F19 /* Property Lists */ = {
+			isa = PBXGroup;
+			children = (
+				4CD3E0941E96BC5900E91F19 /* Female16-.plist */,
+				4CD3E0961E96C29600E91F19 /* Female16-30.plist */,
+				4CD3E0991E96C89800E91F19 /* Female30-50.plist */,
+				4CD3E09B1E96D0FC00E91F19 /* Female50+.plist */,
+			);
+			name = "Property Lists";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,13 +240,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CD3E09A1E96C89800E91F19 /* Female30-50.plist in Resources */,
 				4CD3E08F1E95502800E91F19 /* Female50+.xcassets in Resources */,
 				4CD3E08C1E95502800E91F19 /* Female16-.xcassets in Resources */,
 				4CD3E0921E95502800E91F19 /* Male30-50.xcassets in Resources */,
+				4CD3E09C1E96D0FC00E91F19 /* Female50+.plist in Resources */,
 				4CD3DF781E8D6C7000E91F19 /* LaunchScreen.storyboard in Resources */,
 				4CD3E0931E95502800E91F19 /* Male50+.xcassets in Resources */,
 				4CD3E0911E95502800E91F19 /* Male16-30.xcassets in Resources */,
 				4CD3DF751E8D6C7000E91F19 /* Assets.xcassets in Resources */,
+				4CD3E0971E96C29600E91F19 /* Female16-30.plist in Resources */,
+				4CD3E0951E96BC5900E91F19 /* Female16-.plist in Resources */,
 				4CD3E08D1E95502800E91F19 /* Female16-30.xcassets in Resources */,
 				4CD3DF731E8D6C7000E91F19 /* Main.storyboard in Resources */,
 				4CD3E08E1E95502800E91F19 /* Female30-50.xcassets in Resources */,
