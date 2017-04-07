@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Item - 1</key>
+	<dict>
+		<key>Caption</key>
+		<string>Аквариум-квартира</string>
+		<key>Photo</key>
+		<string>аквариум16-</string>
+	</dict>
+	<key>Item - 2</key>
+	<dict>
+		<key>Caption</key>
+		<string>Набор программируемых плат Arduino</string>
+		<key>Photo</key>
+		<string>ардуино16-</string>
+	</dict>
+	<key>Item - 3</key>
+	<dict>
+		<key>Caption</key>
+		<string>Балансборд</string>
+		<key>Photo</key>
+		<string>балансборд16-</string>
+	</dict>
+	<key>Item - 4</key>
+	<dict>
+		<key>Caption</key>
+		<string>Набор дизайнерских принадлежностей</string>
+		<key>Photo</key>
+		<string>дизайн16-</string>
+	</dict>
+	<key>Item - 5</key>
+	<dict>
+		<key>Caption</key>
+		<string>Домик для детей</string>
+		<key>Photo</key>
+		<string>домик16-</string>
+	</dict>
+	<key>Item - 6</key>
+	<dict>
+		<key>Caption</key>
+		<string>Доска для рисования мелом</string>
+		<key>Photo</key>
+		<string>доска16-</string>
+	</dict>
+	<key>Item - 7</key>
+	<dict>
+		<key>Caption</key>
+		<string>Дрон </string>
+		<key>Photo</key>
+		<string>дрон16-</string>
+	</dict>
+	<key>Item - 8</key>
+	<dict>
+		<key>Caption</key>
+		<string>Модель корабля</string>
+		<key>Photo</key>
+		<string>корабль16-</string>
+	</dict>
+	<key>Item - 9</key>
+	<dict>
+		<key>Caption</key>
+		<string>Леденцы с рисунками</string>
+		<key>Photo</key>
+		<string>леденцы16-</string>
+	</dict>
+	<key>Item - 10</key>
+	<dict>
+		<key>Caption</key>
+		<string>Настольная игра</string>
+		<key>Photo</key>
+		<string>манчкин16-</string>
+	</dict>
+	<key>Item - 11</key>
+	<dict>
+		<key>Caption</key>
+		<string>Стакан-неваляшка</string>
+		<key>Photo</key>
+		<string>неваляшка16-</string>
+	</dict>
+	<key>Item - 12</key>
+	<dict>
+		<key>Caption</key>
+		<string>Планшет для рисования водой</string>
+		<key>Photo</key>
+		<string>рисовалка по воде16-</string>
+	</dict>
+	<key>Item - 13</key>
+	<dict>
+		<key>Caption</key>
+		<string>3D-Ручка</string>
+		<key>Photo</key>
+		<string>ручка16-</string>
+	</dict>
+	<key>Item - 14</key>
+	<dict>
+		<key>Caption</key>
+		<string>Шоколадные инструменты</string>
+		<key>Photo</key>
+		<string>шоколад16-</string>
+	</dict>
+</dict>
+</plist>

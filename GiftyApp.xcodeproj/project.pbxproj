@@ -30,6 +30,10 @@
 		4CD3E0971E96C29600E91F19 /* Female16-30.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CD3E0961E96C29600E91F19 /* Female16-30.plist */; };
 		4CD3E09A1E96C89800E91F19 /* Female30-50.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CD3E0991E96C89800E91F19 /* Female30-50.plist */; };
 		4CD3E09C1E96D0FC00E91F19 /* Female50+.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CD3E09B1E96D0FC00E91F19 /* Female50+.plist */; };
+		4CD3E09E1E979F2F00E91F19 /* Male16-.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CD3E09D1E979F2F00E91F19 /* Male16-.plist */; };
+		4CD3E0A01E97A20E00E91F19 /* Male16-30.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CD3E09F1E97A20E00E91F19 /* Male16-30.plist */; };
+		4CD3E0A21E97A52F00E91F19 /* Male30-50.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CD3E0A11E97A52F00E91F19 /* Male30-50.plist */; };
+		4CD3E0A41E97A81400E91F19 /* Male50+.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CD3E0A31E97A81400E91F19 /* Male50+.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +69,10 @@
 		4CD3E0961E96C29600E91F19 /* Female16-30.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Female16-30.plist"; sourceTree = "<group>"; };
 		4CD3E0991E96C89800E91F19 /* Female30-50.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Female30-50.plist"; sourceTree = "<group>"; };
 		4CD3E09B1E96D0FC00E91F19 /* Female50+.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Female50+.plist"; sourceTree = "<group>"; };
+		4CD3E09D1E979F2F00E91F19 /* Male16-.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Male16-.plist"; sourceTree = "<group>"; };
+		4CD3E09F1E97A20E00E91F19 /* Male16-30.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Male16-30.plist"; sourceTree = "<group>"; };
+		4CD3E0A11E97A52F00E91F19 /* Male30-50.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Male30-50.plist"; sourceTree = "<group>"; };
+		4CD3E0A31E97A81400E91F19 /* Male50+.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Male50+.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +185,10 @@
 				4CD3E0961E96C29600E91F19 /* Female16-30.plist */,
 				4CD3E0991E96C89800E91F19 /* Female30-50.plist */,
 				4CD3E09B1E96D0FC00E91F19 /* Female50+.plist */,
+				4CD3E09D1E979F2F00E91F19 /* Male16-.plist */,
+				4CD3E09F1E97A20E00E91F19 /* Male16-30.plist */,
+				4CD3E0A11E97A52F00E91F19 /* Male30-50.plist */,
+				4CD3E0A31E97A81400E91F19 /* Male50+.plist */,
 			);
 			name = "Property Lists";
 			sourceTree = "<group>";
@@ -245,12 +257,16 @@
 				4CD3E08C1E95502800E91F19 /* Female16-.xcassets in Resources */,
 				4CD3E0921E95502800E91F19 /* Male30-50.xcassets in Resources */,
 				4CD3E09C1E96D0FC00E91F19 /* Female50+.plist in Resources */,
+				4CD3E0A21E97A52F00E91F19 /* Male30-50.plist in Resources */,
 				4CD3DF781E8D6C7000E91F19 /* LaunchScreen.storyboard in Resources */,
 				4CD3E0931E95502800E91F19 /* Male50+.xcassets in Resources */,
 				4CD3E0911E95502800E91F19 /* Male16-30.xcassets in Resources */,
 				4CD3DF751E8D6C7000E91F19 /* Assets.xcassets in Resources */,
 				4CD3E0971E96C29600E91F19 /* Female16-30.plist in Resources */,
+				4CD3E0A41E97A81400E91F19 /* Male50+.plist in Resources */,
+				4CD3E09E1E979F2F00E91F19 /* Male16-.plist in Resources */,
 				4CD3E0951E96BC5900E91F19 /* Female16-.plist in Resources */,
+				4CD3E0A01E97A20E00E91F19 /* Male16-30.plist in Resources */,
 				4CD3E08D1E95502800E91F19 /* Female16-30.xcassets in Resources */,
 				4CD3DF731E8D6C7000E91F19 /* Main.storyboard in Resources */,
 				4CD3E08E1E95502800E91F19 /* Female30-50.xcassets in Resources */,

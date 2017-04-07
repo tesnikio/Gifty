@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Item - 1</key>
+	<dict>
+		<key>Caption</key>
+		<string>Коллекция виниловых дисков</string>
+		<key>Photo</key>
+		<string>винил30-50</string>
+	</dict>
+	<key>Item - 2</key>
+	<dict>
+		<key>Caption</key>
+		<string>Склад винных пробок</string>
+		<key>Photo</key>
+		<string>вино16-30</string>
+	</dict>
+	<key>Item - 3</key>
+	<dict>
+		<key>Caption</key>
+		<string>Виски-камни</string>
+		<key>Photo</key>
+		<string>виски30-50</string>
+	</dict>
+	<key>Item - 4</key>
+	<dict>
+		<key>Caption</key>
+		<string>Груша-антистресс</string>
+		<key>Photo</key>
+		<string>груша30-50</string>
+	</dict>
+	<key>Item - 5</key>
+	<dict>
+		<key>Caption</key>
+		<string>Дартс</string>
+		<key>Photo</key>
+		<string>дартс30-50</string>
+	</dict>
+	<key>Item - 6</key>
+	<dict>
+		<key>Caption</key>
+		<string>Искатель ключей</string>
+		<key>Photo</key>
+		<string>ключи30-50</string>
+	</dict>
+	<key>Item - 7</key>
+	<dict>
+		<key>Caption</key>
+		<string>Модель корабля</string>
+		<key>Photo</key>
+		<string>корабль30-50</string>
+	</dict>
+	<key>Item - 8</key>
+	<dict>
+		<key>Caption</key>
+		<string>Кресло-мешок</string>
+		<key>Photo</key>
+		<string>мешок30-50</string>
+	</dict>
+	<key>Item - 9</key>
+	<dict>
+		<key>Caption</key>
+		<string>Стакан-неваляшка</string>
+		<key>Photo</key>
+		<string>неваляшка30-50</string>
+	</dict>
+	<key>Item - 10</key>
+	<dict>
+		<key>Caption</key>
+		<string>Поп-арт картина</string>
+		<key>Photo</key>
+		<string>попарт30-50</string>
+	</dict>
+	<key>Item - 11</key>
+	<dict>
+		<key>Caption</key>
+		<string>Портмоне</string>
+		<key>Photo</key>
+		<string>портмоне30-50</string>
+	</dict>
+	<key>Item - 12</key>
+	<dict>
+		<key>Caption</key>
+		<string>Винил-проигрыватель</string>
+		<key>Photo</key>
+		<string>проигрыватель30-50</string>
+	</dict>
+	<key>Item - 13</key>
+	<dict>
+		<key>Caption</key>
+		<string>Кружка-бра</string>
+		<key>Photo</key>
+		<string>светильник30-50</string>
+	</dict>
+	<key>Item - 14</key>
+	<dict>
+		<key>Caption</key>
+		<string>Шоколадные инструменты</string>
+		<key>Photo</key>
+		<string>шоколад30-50</string>
+	</dict>
+</dict>
+</plist>

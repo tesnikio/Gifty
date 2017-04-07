@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Item - 1</key>
+	<dict>
+		<key>Caption</key>
+		<string>Искатель ключей</string>
+		<key>Photo</key>
+		<string>10</string>
+	</dict>
+	<key>Item - 2</key>
+	<dict>
+		<key>Caption</key>
+		<string>Склад винных пробок</string>
+		<key>Photo</key>
+		<string>11</string>
+	</dict>
+	<key>Item - 3</key>
+	<dict>
+		<key>Caption</key>
+		<string>Съедобная бумага</string>
+		<key>Photo</key>
+		<string>бумага50+</string>
+	</dict>
+	<key>Item - 4</key>
+	<dict>
+		<key>Caption</key>
+		<string>Виска-камни</string>
+		<key>Photo</key>
+		<string>виски50+</string>
+	</dict>
+	<key>Item - 5</key>
+	<dict>
+		<key>Caption</key>
+		<string>Гамак для ног</string>
+		<key>Photo</key>
+		<string>гамак50+</string>
+	</dict>
+	<key>Item - 6</key>
+	<dict>
+		<key>Caption</key>
+		<string>Груша-антистресс</string>
+		<key>Photo</key>
+		<string>груша50+</string>
+	</dict>
+	<key>Item - 7</key>
+	<dict>
+		<key>Caption</key>
+		<string>Модель корабля</string>
+		<key>Photo</key>
+		<string>корабль50+</string>
+	</dict>
+	<key>Item - 8</key>
+	<dict>
+		<key>Caption</key>
+		<string>Кресло-качалка</string>
+		<key>Photo</key>
+		<string>кресло-качалка50+</string>
+	</dict>
+	<key>Item - 9</key>
+	<dict>
+		<key>Caption</key>
+		<string>Настольная игра</string>
+		<key>Photo</key>
+		<string>манчкин50+</string>
+	</dict>
+	<key>Item - 10</key>
+	<dict>
+		<key>Caption</key>
+		<string>Портмоне</string>
+		<key>Photo</key>
+		<string>портмоне50+</string>
+	</dict>
+	<key>Item - 11</key>
+	<dict>
+		<key>Caption</key>
+		<string>Скретч-карта</string>
+		<key>Photo</key>
+		<string>скретч-карта50+</string>
+	</dict>
+	<key>Item - 12</key>
+	<dict>
+		<key>Caption</key>
+		<string>Стакан-неваляшка</string>
+		<key>Photo</key>
+		<string>стакан-неваляшка50+</string>
+	</dict>
+</dict>
+</plist>
