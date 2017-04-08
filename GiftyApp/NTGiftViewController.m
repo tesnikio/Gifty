@@ -8,9 +8,11 @@
 
 #import "NTGiftViewController.h"
 #import "NTGiftCell.h"
+#import "NTGift.h"
 
 @interface NTGiftViewController ()
 
+@property (nonatomic, strong) NSArray *gifts;
 
 @end
 
@@ -21,7 +23,9 @@ static NSString * const reuseIdentifier = @"GiftCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
+    NTGift *gift = [[NTGift alloc] init];
+        
+    self.gifts = [gift allGifts];
 }
 
 /*
@@ -42,45 +46,25 @@ static NSString * const reuseIdentifier = @"GiftCell";
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 5;
+    return [self.gifts count];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     NTGiftCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    NTGift *gift = [self.gifts objectAtIndex:indexPath.item];
+    
+    cell.captionLabel.text = gift.caption;
+    cell.imageView.image = gift.image;
         
     return cell;
 }
 
 #pragma mark <UICollectionViewDelegate>
 
-/*
-// Uncomment this method to specify if the specified item should be highlighted during tracking
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
-	return YES;
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    
 }
-*/
-
-/*
-// Uncomment this method to specify if the specified item should be selected
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    return YES;
-}
-*/
-
-/*
-// Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
-	return NO;
-}
-
-- (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	return NO;
-}
-
-- (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	
-}
-*/
 
 @end
