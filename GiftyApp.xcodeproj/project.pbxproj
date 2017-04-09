@@ -52,13 +52,13 @@
 		4CD3E0261E93BA0300E91F19 /* NTGiftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTGiftCell.m; sourceTree = "<group>"; };
 		4CD3E0A51E98E6C300E91F19 /* NTGift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTGift.h; sourceTree = "<group>"; };
 		4CD3E0A61E98E6C300E91F19 /* NTGift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTGift.m; sourceTree = "<group>"; };
-		4CD3E0AF1E994AD300E91F19 /* Male50+.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Male50+.xcassets"; sourceTree = "<group>"; };
+		4CD3E0AF1E994AD300E91F19 /* Male50+.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Male50+.xcassets"; path = "GiftyApp/Male50+.xcassets"; sourceTree = "<group>"; };
 		4CD3E0B11E994B2700E91F19 /* Male50+.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Male50+.plist"; sourceTree = "<group>"; };
-		4CD3E0B31E99526C00E91F19 /* Male30-50.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Male30-50.xcassets"; sourceTree = "<group>"; };
+		4CD3E0B31E99526C00E91F19 /* Male30-50.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Male30-50.xcassets"; path = "GiftyApp/Male30-50.xcassets"; sourceTree = "<group>"; };
 		4CD3E0B51E99535700E91F19 /* Male30-50.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Male30-50.plist"; sourceTree = "<group>"; };
-		4CD3E0B71E99582200E91F19 /* Male16-30.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Male16-30.xcassets"; sourceTree = "<group>"; };
+		4CD3E0B71E99582200E91F19 /* Male16-30.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Male16-30.xcassets"; path = "GiftyApp/Male16-30.xcassets"; sourceTree = "<group>"; };
 		4CD3E0B91E9958F800E91F19 /* Male16-30.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Male16-30.plist"; sourceTree = "<group>"; };
-		4CD3E0BB1E99609700E91F19 /* Male16-.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Male16-.xcassets"; sourceTree = "<group>"; };
+		4CD3E0BB1E99609700E91F19 /* Male16-.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Male16-.xcassets"; path = "GiftyApp/Male16-.xcassets"; sourceTree = "<group>"; };
 		4CD3E0BD1E9960A500E91F19 /* Male16-.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Male16-.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
