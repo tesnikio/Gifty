@@ -26,6 +26,7 @@ static NSString * const reuseIdentifier = @"GiftCell";
     NTGift *gift = [[NTGift alloc] init];
         
     self.gifts = [gift allGifts];
+
 }
 
 /*

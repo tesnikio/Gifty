@@ -17,21 +17,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage new]
-                                                  forBarMetrics:UIBarMetricsDefault];
-    self.navigationController.navigationBar.shadowImage = [UIImage new];
-    self.navigationController.navigationBar.translucent = YES;
-    self.navigationController.view.backgroundColor = [UIColor clearColor];
-    self.navigationController.navigationBar.backgroundColor = [UIColor clearColor];
-
-}
-
-- (void)dealloc {
+//    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init]
+//                                                  forBarMetrics:UIBarMetricsDefault];
+//    self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
+//    self.navigationController.navigationBar.translucent = YES;
+//    self.navigationController.view.backgroundColor = [UIColor clearColor];
+//    self.navigationController.navigationBar.backgroundColor = [UIColor clearColor];
     
-    [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
     
 }
-
 
 #pragma mark - Navigation
 

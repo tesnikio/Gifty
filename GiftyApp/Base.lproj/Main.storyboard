@@ -37,8 +37,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="screen" translatesAutoresizingMaskIntoConstraints="NO" id="NuG-eF-MTH">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NuG-eF-MTH">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Пол" textAlignment="center" minimumFontSize="17" background="textField" translatesAutoresizingMaskIntoConstraints="NO" id="uSI-Yf-IQA">
                                 <rect key="frame" x="62" y="314" width="250" height="38"/>
@@ -91,14 +92,14 @@
                                     <constraint firstAttribute="height" constant="44" id="rX1-8m-x3T"/>
                                     <constraint firstAttribute="width" constant="44" id="xy1-qo-1eG"/>
                                 </constraints>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" image="search-circular-button"/>
+                                <color key="tintColor" red="0.93833202123641968" green="0.42340335249900818" blue="0.3111366331577301" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="magnifying-glass-2"/>
                                 <connections>
                                     <action selector="searchButtonAction:" destination="YuM-GA-dYF" eventType="touchUpInside" id="eik-dc-rV9"/>
                                     <segue destination="xuw-lU-e5E" kind="show" id="D0f-pW-YZi"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="oyQ-vR-f3p">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppLogo" translatesAutoresizingMaskIntoConstraints="NO" id="oyQ-vR-f3p">
                                 <rect key="frame" x="98" y="72" width="179" height="215"/>
                             </imageView>
                         </subviews>
@@ -371,9 +372,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Logo" width="515" height="729"/>
-        <image name="screen" width="375" height="667"/>
-        <image name="search-circular-button" width="256" height="256"/>
+        <image name="AppLogo" width="664" height="888"/>
+        <image name="magnifying-glass-2" width="512" height="512"/>
         <image name="textField" width="500" height="75"/>
     </resources>
 </document>
