@@ -13,7 +13,7 @@
 - (NSMutableArray *) allGifts {
     
     NSMutableArray *gifts = [NSMutableArray array];
-    NSURL *URL = [[NSBundle mainBundle] URLForResource:@"Male16-" withExtension:@"plist"];
+    NSURL *URL = [[NSBundle mainBundle] URLForResource:@"Female16-" withExtension:@"plist"];
     NSArray *giftsFromPlist = [NSArray arrayWithContentsOfURL:URL];
     
     for (NSDictionary *dict in giftsFromPlist) {

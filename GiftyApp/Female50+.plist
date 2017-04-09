@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Caption</key>
+		<string>Дверной стоппер</string>
+		<key>Photo</key>
+		<string>стоппер50+ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Горшки для растений</string>
+		<key>Photo</key>
+		<string>горшок50+ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Портативная кофеварка</string>
+		<key>Photo</key>
+		<string>кофеварка50+ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Молочник</string>
+		<key>Photo</key>
+		<string>молочник50+ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Домашнее дерево</string>
+		<key>Photo</key>
+		<string>дерево50+ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Формочки для льда</string>
+		<key>Photo</key>
+		<string>форма50+ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Акваферма</string>
+		<key>Photo</key>
+		<string>акваферма50+ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Кресло-качалка</string>
+		<key>Photo</key>
+		<string>качалка50+ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Гамак для ног</string>
+		<key>Photo</key>
+		<string>гамак50+ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Искатель ключей</string>
+		<key>Photo</key>
+		<string>искатель50+ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Стакан-неваляшка</string>
+		<key>Photo</key>
+		<string>неваляшка50+ж</string>
+	</dict>
+</array>
+</plist>

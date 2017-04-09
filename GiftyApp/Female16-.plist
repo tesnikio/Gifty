@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Caption</key>
+		<string>Подвесной светильник</string>
+		<key>Photo</key>
+		<string>светильник16-ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Горшок для растений</string>
+		<key>Photo</key>
+		<string>горшок16-ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Посуда для завтраков</string>
+		<key>Photo</key>
+		<string>посуда16-ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Набор подтяжек и бабочек</string>
+		<key>Photo</key>
+		<string>подтяжки16-ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Плетеный браслет</string>
+		<key>Photo</key>
+		<string>браслет16-ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Набор карандашей</string>
+		<key>Photo</key>
+		<string>карандаш16-ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Шкатулка</string>
+		<key>Photo</key>
+		<string>шкатулка16-ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Брошь на одежду/рюкзак</string>
+		<key>Photo</key>
+		<string>брошь16-ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Рюкзак</string>
+		<key>Photo</key>
+		<string>рюкзак16-ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Банка для напитков</string>
+		<key>Photo</key>
+		<string>стакан16-ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Альбом для Instagram-фото</string>
+		<key>Photo</key>
+		<string>истабук16-ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Акваферма</string>
+		<key>Photo</key>
+		<string>акваферма16-ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Мини-дом для детей</string>
+		<key>Photo</key>
+		<string>домик16-ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Набор дизайнерских принадлежностей</string>
+		<key>Photo</key>
+		<string>дизайн16-ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Настольная игра</string>
+		<key>Photo</key>
+		<string>манчкин16-ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Доска для рисования</string>
+		<key>Photo</key>
+		<string>доска16-ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Балансборд</string>
+		<key>Photo</key>
+		<string>балансборд16-ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Планшет для рисования водой</string>
+		<key>Photo</key>
+		<string>рисовалка водой16-ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Леденцы с рисунками</string>
+		<key>Photo</key>
+		<string>леденцы16-ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>3D-Ручка</string>
+		<key>Photo</key>
+		<string>3D-ручка</string>
+	</dict>
+</array>
+</plist>

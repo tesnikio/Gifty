@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Caption</key>
+		<string>Стол-подставка</string>
+		<key>Photo</key>
+		<string>стол-подставка30-50ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Декоративная вешалка</string>
+		<key>Photo</key>
+		<string>декоративная вешалка30-50ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Подвесной светильник</string>
+		<key>Photo</key>
+		<string>подвесной светильник30-50ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Горшок для растений</string>
+		<key>Photo</key>
+		<string>горшок30-50ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Зеркало с подставкой</string>
+		<key>Photo</key>
+		<string>зеркало30-50ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Декоративный абажур</string>
+		<key>Photo</key>
+		<string>абажур30-50ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Чехол для средств гигиены</string>
+		<key>Photo</key>
+		<string>чехол для гигиены30-50ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Портативная кофеварка</string>
+		<key>Photo</key>
+		<string>кофеварка30-50ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Масло-парфюм</string>
+		<key>Photo</key>
+		<string>масло-парфюм30-50ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Домашнее дерево</string>
+		<key>Photo</key>
+		<string>дерево30-50ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Чехол для чемодана</string>
+		<key>Photo</key>
+		<string>чехол30-50ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Шкатулка</string>
+		<key>Photo</key>
+		<string>шкатулка30-50ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Брошь на одежду/рюкзак</string>
+		<key>Photo</key>
+		<string>брошь30-50ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Подставка для ванной</string>
+		<key>Photo</key>
+		<string>подставка для ванной30-50ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Акваферма</string>
+		<key>Photo</key>
+		<string>акваферма30-50ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Держатель украшений</string>
+		<key>Photo</key>
+		<string>держатель30-50ж</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>Стакан для фруктов</string>
+		<key>Photo</key>
+		<string>стакан для фруков30-50ж</string>
+	</dict>
+</array>
+</plist>
