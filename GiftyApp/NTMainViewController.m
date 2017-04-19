@@ -7,8 +7,9 @@
 //
 
 #import "NTMainViewController.h"
+#import "RKDropdownAlert.h"
 
-@interface NTMainViewController ()
+@interface NTMainViewController () <RKDropdownAlertDelegate>
 
 @end
 
@@ -23,6 +24,20 @@
     self.navigationController.navigationBar.translucent = YES;
     self.navigationController.view.backgroundColor = [UIColor clearColor];
     self.navigationController.navigationBar.backgroundColor = [UIColor clearColor];
+    
+}
+
+#pragma mark - RKDropdownAlertDelegate
+
+- (BOOL)dropdownAlertWasTapped:(RKDropdownAlert *)alert {
+    
+    return YES;
+    
+}
+
+-(BOOL)dropdownAlertWasDismissed {
+    
+    return YES;
     
 }
 
@@ -62,6 +77,7 @@
         
     } else if ([segue.identifier isEqualToString:@"showGifts"]) {
         
+        //pass to VC something
         
     }
 }
@@ -106,7 +122,16 @@
     
     if ([self.sexField.text isEqualToString:@""] || [self.ageField.text isEqualToString:@""] || [self.occasionField.text isEqualToString:@""]) {
         
+        [RKDropdownAlert title:@"Ошибка!"
+                       message:@"Заполните все поля для ввода!"
+               backgroundColor:[UIColor colorWithRed:0.98039216f green:0.43529412f blue:0.32156863f alpha:1.f]
+                     textColor:[UIColor whiteColor]
+                          time:1
+                      delegate:self];
         
+    } else {
+        
+        //code to be executed
         
     }
     

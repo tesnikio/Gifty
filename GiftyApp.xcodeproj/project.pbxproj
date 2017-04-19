@@ -20,6 +20,7 @@
 		4C729CCC1E9A435600CA6B8E /* Female16-30.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C729CCB1E9A435600CA6B8E /* Female16-30.plist */; };
 		4C729CCE1E9A4E6800CA6B8E /* Female16-.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C729CCD1E9A4E6800CA6B8E /* Female16-.xcassets */; };
 		4C729CD01E9A4E7200CA6B8E /* Female16-.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C729CCF1E9A4E7200CA6B8E /* Female16-.plist */; };
+		4CA246C01EA7682400356B91 /* RKDropdownAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA246BF1EA7682400356B91 /* RKDropdownAlert.m */; };
 		4CD3DF6A1E8D6C7000E91F19 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD3DF691E8D6C7000E91F19 /* main.m */; };
 		4CD3DF6D1E8D6C7000E91F19 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD3DF6C1E8D6C7000E91F19 /* AppDelegate.m */; };
 		4CD3DF731E8D6C7000E91F19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD3DF711E8D6C7000E91F19 /* Main.storyboard */; };
@@ -51,6 +52,8 @@
 		4C729CCB1E9A435600CA6B8E /* Female16-30.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Female16-30.plist"; sourceTree = "<group>"; };
 		4C729CCD1E9A4E6800CA6B8E /* Female16-.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Female16-.xcassets"; path = "GiftyApp/Female16-.xcassets"; sourceTree = "<group>"; };
 		4C729CCF1E9A4E7200CA6B8E /* Female16-.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Female16-.plist"; sourceTree = "<group>"; };
+		4CA246BE1EA7682400356B91 /* RKDropdownAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKDropdownAlert.h; sourceTree = "<group>"; };
+		4CA246BF1EA7682400356B91 /* RKDropdownAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKDropdownAlert.m; sourceTree = "<group>"; };
 		4CD3DF651E8D6C7000E91F19 /* GiftyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiftyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD3DF691E8D6C7000E91F19 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4CD3DF6B1E8D6C7000E91F19 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -131,6 +134,8 @@
 		4CD3DF681E8D6C7000E91F19 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4CA246BE1EA7682400356B91 /* RKDropdownAlert.h */,
+				4CA246BF1EA7682400356B91 /* RKDropdownAlert.m */,
 				4CD3DF6B1E8D6C7000E91F19 /* AppDelegate.h */,
 				4CD3DF6C1E8D6C7000E91F19 /* AppDelegate.m */,
 				4CD3DF791E8D6C7000E91F19 /* Info.plist */,
@@ -322,6 +327,7 @@
 				4CD3DF6D1E8D6C7000E91F19 /* AppDelegate.m in Sources */,
 				4CD3DF841E8D6F7800E91F19 /* NTSexViewController.m in Sources */,
 				4CD3DF6A1E8D6C7000E91F19 /* main.m in Sources */,
+				4CA246C01EA7682400356B91 /* RKDropdownAlert.m in Sources */,
 				4CD3E0271E93BA0300E91F19 /* NTGiftCell.m in Sources */,
 				4CD3DF811E8D6D6600E91F19 /* NTMainViewController.m in Sources */,
 				4CD3DF871E8D76FC00E91F19 /* NTAgeViewController.m in Sources */,
