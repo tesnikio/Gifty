@@ -24,8 +24,6 @@
     self.navigationController.view.backgroundColor = [UIColor clearColor];
     self.navigationController.navigationBar.backgroundColor = [UIColor clearColor];
     
-    
-    
 }
 
 #pragma mark - Navigation
