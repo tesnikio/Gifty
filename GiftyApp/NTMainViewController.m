@@ -35,7 +35,7 @@
     
 }
 
--(BOOL)dropdownAlertWasDismissed {
+- (BOOL)dropdownAlertWasDismissed {
     
     return YES;
     
@@ -128,6 +128,12 @@
                      textColor:[UIColor whiteColor]
                           time:1
                       delegate:self];
+        
+        [[UIApplication sharedApplication] beginIgnoringInteractionEvents];
+        
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.1f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [[UIApplication sharedApplication] endIgnoringInteractionEvents];
+        });
         
     } else {
         

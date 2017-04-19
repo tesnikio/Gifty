@@ -101,6 +101,15 @@
 			name = Base;
 			sourceTree = "<group>";
 		};
+		4CA246C11EA788E100356B91 /* RKDropdownAlert */ = {
+			isa = PBXGroup;
+			children = (
+				4CA246BE1EA7682400356B91 /* RKDropdownAlert.h */,
+				4CA246BF1EA7682400356B91 /* RKDropdownAlert.m */,
+			);
+			name = RKDropdownAlert;
+			sourceTree = "<group>";
+		};
 		4CD3DF5C1E8D6C7000E91F19 = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +129,7 @@
 		4CD3DF671E8D6C7000E91F19 /* GiftyApp */ = {
 			isa = PBXGroup;
 			children = (
+				4CA246C11EA788E100356B91 /* RKDropdownAlert */,
 				4CD3E0A81E98E6C800E91F19 /* Models */,
 				4CD3DF9F1E913B7A00E91F19 /* Cells */,
 				4CD3DF8C1E8FBC4C00E91F19 /* Controllers */,
@@ -134,8 +144,6 @@
 		4CD3DF681E8D6C7000E91F19 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4CA246BE1EA7682400356B91 /* RKDropdownAlert.h */,
-				4CA246BF1EA7682400356B91 /* RKDropdownAlert.m */,
 				4CD3DF6B1E8D6C7000E91F19 /* AppDelegate.h */,
 				4CD3DF6C1E8D6C7000E91F19 /* AppDelegate.m */,
 				4CD3DF791E8D6C7000E91F19 /* Info.plist */,
