@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1358DAB4650259DECD02EE1A9A85D693 /* Pods-GiftyApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F71CCA1F0937E335EE8CCB493DEB3F48 /* Pods-GiftyApp-dummy.m */; };
+		26CDF8F354A6318E57342058AB6F38AE /* CZPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C5991E16EBD757C3C360F9C3314857 /* CZPicker-dummy.m */; };
+		5A9DA3164C804F00EDA1056AEB2C9DAF /* CZPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B36F5E30D781778F09160407115C353 /* CZPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61ABCD5395B7347E40BB67DAE1B1D979 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		97AA47E98E7913E3D0337105C99FDEA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		9C579F6719702764420B25136C83A327 /* CZPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 7410351A26916230142922B90322C53F /* CZPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A33ABF07F70EF3A61F7445616AB744AF /* CZPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7361DA2FDE2752059D1E3EFB94F241 /* CZPickerView.m */; };
+		C4B13F0C12BD79DE21009A973C99DDEB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2A844A887D904C77D41BD49C59E0AD78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0133DDFD33B19363C76EBD0CE9FC627D;
+			remoteInfo = CZPicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		166785797B8FF6F59C9EB0CD5F0F0D3B /* CZPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CZPicker.xcconfig; sourceTree = "<group>"; };
+		56D750976D262AE6E06D7899122F62C6 /* Pods-GiftyApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GiftyApp-resources.sh"; sourceTree = "<group>"; };
+		5E63D4F1E3D2E4FB9F9114AA280024ED /* Pods-GiftyApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GiftyApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6F7361DA2FDE2752059D1E3EFB94F241 /* CZPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CZPickerView.m; path = Pod/Classes/CZPickerView.m; sourceTree = "<group>"; };
+		7410351A26916230142922B90322C53F /* CZPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CZPicker.h; path = Pod/Classes/CZPicker.h; sourceTree = "<group>"; };
+		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		87DE986A1C4346275FEBE2D5C682E76D /* Pods-GiftyApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GiftyApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		8B36F5E30D781778F09160407115C353 /* CZPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CZPickerView.h; path = Pod/Classes/CZPickerView.h; sourceTree = "<group>"; };
+		90F350F2BD0B19751AC2991E64C917A7 /* Pods-GiftyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GiftyApp.release.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AF387AA5AE632A7DB61F6FE907137B74 /* Pods-GiftyApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GiftyApp-frameworks.sh"; sourceTree = "<group>"; };
+		B9531F0BB140C81E41F6928FFBA03B4E /* CZPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CZPicker-prefix.pch"; sourceTree = "<group>"; };
+		CB8B117E431DB66231F19A5457EC9217 /* libPods-GiftyApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-GiftyApp.a"; path = "libPods-GiftyApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2C5991E16EBD757C3C360F9C3314857 /* CZPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CZPicker-dummy.m"; sourceTree = "<group>"; };
+		E1808D5CD8693083B944845695D42BDA /* Pods-GiftyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GiftyApp.debug.xcconfig"; sourceTree = "<group>"; };
+		ECCD4C07F7A038394B8E73BF5B70F04A /* libCZPicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libCZPicker.a; path = libCZPicker.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F71CCA1F0937E335EE8CCB493DEB3F48 /* Pods-GiftyApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GiftyApp-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D46FF2CE97C8AD863708749029C0E84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61ABCD5395B7347E40BB67DAE1B1D979 /* Foundation.framework in Frameworks */,
+				C4B13F0C12BD79DE21009A973C99DDEB /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58C5BB1EF4E13CD295CF1764BCBE736C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97AA47E98E7913E3D0337105C99FDEA5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12FAE413D50C5BA089C55F037C3868C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D14D6301C3D3DE277A5B0F37AE346808 /* CZPicker */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		167F9028FFF4EA04A3DFE7B24272B9A0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				31C0F6C6D4C15ECE6EE5CDD99956E1E6 /* Pods-GiftyApp */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		31C0F6C6D4C15ECE6EE5CDD99956E1E6 /* Pods-GiftyApp */ = {
+			isa = PBXGroup;
+			children = (
+				5E63D4F1E3D2E4FB9F9114AA280024ED /* Pods-GiftyApp-acknowledgements.markdown */,
+				87DE986A1C4346275FEBE2D5C682E76D /* Pods-GiftyApp-acknowledgements.plist */,
+				F71CCA1F0937E335EE8CCB493DEB3F48 /* Pods-GiftyApp-dummy.m */,
+				AF387AA5AE632A7DB61F6FE907137B74 /* Pods-GiftyApp-frameworks.sh */,
+				56D750976D262AE6E06D7899122F62C6 /* Pods-GiftyApp-resources.sh */,
+				E1808D5CD8693083B944845695D42BDA /* Pods-GiftyApp.debug.xcconfig */,
+				90F350F2BD0B19751AC2991E64C917A7 /* Pods-GiftyApp.release.xcconfig */,
+			);
+			name = "Pods-GiftyApp";
+			path = "Target Support Files/Pods-GiftyApp";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6EE98446B568159EE277B68FD442AF0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5048EFD706958885746AAD9D2D603912 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECCD4C07F7A038394B8E73BF5B70F04A /* libCZPicker.a */,
+				CB8B117E431DB66231F19A5457EC9217 /* libPods-GiftyApp.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64029C20826389780E593C1D7D9467F7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				166785797B8FF6F59C9EB0CD5F0F0D3B /* CZPicker.xcconfig */,
+				D2C5991E16EBD757C3C360F9C3314857 /* CZPicker-dummy.m */,
+				B9531F0BB140C81E41F6928FFBA03B4E /* CZPicker-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CZPicker";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				12FAE413D50C5BA089C55F037C3868C7 /* Pods */,
+				5048EFD706958885746AAD9D2D603912 /* Products */,
+				167F9028FFF4EA04A3DFE7B24272B9A0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D14D6301C3D3DE277A5B0F37AE346808 /* CZPicker */ = {
+			isa = PBXGroup;
+			children = (
+				7410351A26916230142922B90322C53F /* CZPicker.h */,
+				8B36F5E30D781778F09160407115C353 /* CZPickerView.h */,
+				6F7361DA2FDE2752059D1E3EFB94F241 /* CZPickerView.m */,
+				64029C20826389780E593C1D7D9467F7 /* Support Files */,
+			);
+			name = CZPicker;
+			path = CZPicker;
+			sourceTree = "<group>";
+		};
+		E6EE98446B568159EE277B68FD442AF0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */,
+				7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		14FA18D47E5BFE1F65DCF0B5995800D6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C579F6719702764420B25136C83A327 /* CZPicker.h in Headers */,
+				5A9DA3164C804F00EDA1056AEB2C9DAF /* CZPickerView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0133DDFD33B19363C76EBD0CE9FC627D /* CZPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2CBA2F78C9C3E553D2C4AF8651B07FE /* Build configuration list for PBXNativeTarget "CZPicker" */;
+			buildPhases = (
+				1F0C912ADD7BFA59BEF8265C19D666D3 /* Sources */,
+				3D46FF2CE97C8AD863708749029C0E84 /* Frameworks */,
+				14FA18D47E5BFE1F65DCF0B5995800D6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CZPicker;
+			productName = CZPicker;
+			productReference = ECCD4C07F7A038394B8E73BF5B70F04A /* libCZPicker.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6C5994AD50045E1C8A3F43C4D672DB68 /* Pods-GiftyApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BD45425D8BE06BE1AAFFD49D781F378 /* Build configuration list for PBXNativeTarget "Pods-GiftyApp" */;
+			buildPhases = (
+				FC7967D58F1A0697943F13A65CE98F23 /* Sources */,
+				58C5BB1EF4E13CD295CF1764BCBE736C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E206693653537884BB37C24DFCB3EA7A /* PBXTargetDependency */,
+			);
+			name = "Pods-GiftyApp";
+			productName = "Pods-GiftyApp";
+			productReference = CB8B117E431DB66231F19A5457EC9217 /* libPods-GiftyApp.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 5048EFD706958885746AAD9D2D603912 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0133DDFD33B19363C76EBD0CE9FC627D /* CZPicker */,
+				6C5994AD50045E1C8A3F43C4D672DB68 /* Pods-GiftyApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F0C912ADD7BFA59BEF8265C19D666D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26CDF8F354A6318E57342058AB6F38AE /* CZPicker-dummy.m in Sources */,
+				A33ABF07F70EF3A61F7445616AB744AF /* CZPickerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC7967D58F1A0697943F13A65CE98F23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1358DAB4650259DECD02EE1A9A85D693 /* Pods-GiftyApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E206693653537884BB37C24DFCB3EA7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CZPicker;
+			target = 0133DDFD33B19363C76EBD0CE9FC627D /* CZPicker */;
+			targetProxy = 2A844A887D904C77D41BD49C59E0AD78 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		156284431C64CB05C59BDA0595A1E95A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		395B99935D22717C5749BE503EFCAD52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 166785797B8FF6F59C9EB0CD5F0F0D3B /* CZPicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CZPicker/CZPicker-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4ECC5E62C1C691F621A0F392395DDE38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1808D5CD8693083B944845695D42BDA /* Pods-GiftyApp.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6B766062DF7B69FA63C383AA0B4776C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 166785797B8FF6F59C9EB0CD5F0F0D3B /* CZPicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CZPicker/CZPicker-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C097595EEED412A5E6D51C489B93F22C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90F350F2BD0B19751AC2991E64C917A7 /* Pods-GiftyApp.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C382132BB6BF8CA1A911872A2062FD0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C382132BB6BF8CA1A911872A2062FD0D /* Debug */,
+				156284431C64CB05C59BDA0595A1E95A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BD45425D8BE06BE1AAFFD49D781F378 /* Build configuration list for PBXNativeTarget "Pods-GiftyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ECC5E62C1C691F621A0F392395DDE38 /* Debug */,
+				C097595EEED412A5E6D51C489B93F22C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2CBA2F78C9C3E553D2C4AF8651B07FE /* Build configuration list for PBXNativeTarget "CZPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				395B99935D22717C5749BE503EFCAD52 /* Debug */,
+				6B766062DF7B69FA63C383AA0B4776C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

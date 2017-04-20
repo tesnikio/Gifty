@@ -42,7 +42,7 @@
 }
 
 #pragma mark - Navigation
-
+/*
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
     if ([segue.identifier isEqualToString:@"showSex"]) {
@@ -80,6 +80,12 @@
         //pass to VC something
         
     }
+}*/
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    
+    
 }
 
 - (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
