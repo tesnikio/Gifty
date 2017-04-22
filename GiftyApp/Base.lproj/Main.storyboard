@@ -71,7 +71,7 @@
                                     </segue>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Событие" textAlignment="center" minimumFontSize="17" background="textField" translatesAutoresizingMaskIntoConstraints="NO" id="1zN-zG-CLh">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Событие" textAlignment="center" minimumFontSize="14" background="textField" translatesAutoresizingMaskIntoConstraints="NO" id="1zN-zG-CLh">
                                 <rect key="frame" x="62" y="450" width="250" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="8X9-ZN-AU1"/>

@@ -102,7 +102,11 @@
 - (void)czpickerView:(CZPickerView *)pickerView didConfirmWithItemAtRow:(NSInteger)row {
     
     if ([pickerView isEqual:self.sexPicker]) {
-        self.sexField.text = [self czpickerView:pickerView titleForRow:row];
+        self.sexField.attributedText = [self czpickerView:pickerView attributedTitleForRow:row];
+    } else if ([pickerView isEqual:self.agePicker]) {
+        self.ageField.attributedText = [self czpickerView:pickerView attributedTitleForRow:row];
+    } else if ([pickerView isEqual:self.occasionPicker]) {
+        self.occasionField.attributedText = [self czpickerView:pickerView attributedTitleForRow:row];
     }
     
 }
@@ -133,49 +137,14 @@
 }
 
 #pragma mark - Navigation
-/*
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
-    if ([segue.identifier isEqualToString:@"showSex"]) {
-        
-        NTSexViewController *controller = segue.destinationViewController;
-        UIPopoverPresentationController *popController = [controller popoverPresentationController];
-        popController.permittedArrowDirections = UIPopoverArrowDirectionDown;
-        popController.sourceRect = CGRectMake(CGRectGetMidX(self.sexField.bounds), CGRectGetMidY(self.sexField.bounds), 0, 0);
-        controller.delegate = self;
-        controller.popoverPresentationController.delegate = self;
-        controller.preferredContentSize = CGSizeMake(200.f, 88.f);
-        
-    } else if ([segue.identifier isEqualToString:@"showAge"]) {
-        
-        NTAgeViewController *controller = segue.destinationViewController;
-        UIPopoverPresentationController *popController = [controller popoverPresentationController];
-        popController.permittedArrowDirections = UIPopoverArrowDirectionDown;
-        popController.sourceRect = CGRectMake(CGRectGetMidX(self.ageField.bounds), CGRectGetMidY(self.ageField.bounds), 0, 0);
-        controller.delegate = self;
-        controller.popoverPresentationController.delegate = self;
-        controller.preferredContentSize = CGSizeMake(375.f, 216.f);
-        
-    } else if ([segue.identifier isEqualToString:@"showOccasion"]) {
-        
-        NTOccasionViewController *controller = segue.destinationViewController;
-        UIPopoverPresentationController *popController = [controller popoverPresentationController];
-        popController.permittedArrowDirections = UIPopoverArrowDirectionDown;
-        popController.sourceRect = CGRectMake(CGRectGetMidX(self.occasionField.bounds), CGRectGetMidY(self.occasionField.bounds), 0, 0);
-        controller.delegate = self;
-        controller.popoverPresentationController.delegate = self;
-        controller.preferredContentSize = CGSizeMake(375.f, 216.f);
-        
-    } else if ([segue.identifier isEqualToString:@"showGifts"]) {
+    if ([segue.identifier isEqualToString:@"showGifts"]) {
         
         //pass to VC something
         
     }
-}*/
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    
-    
     
 }
 
@@ -198,7 +167,7 @@
         self.sexPicker = [[CZPickerView alloc] initWithHeaderTitle:@"Пол" cancelButtonTitle:@"Cancel" confirmButtonTitle:@"Confirm"];
         self.sexPicker.headerBackgroundColor = [UIColor whiteColor];
         self.sexPicker.headerTitleColor = [UIColor colorWithRed:0.98039216f green:0.43529412f blue:0.32156863f alpha:1.f];
-        self.sexPicker.headerTitleFont = [UIFont systemFontOfSize: 40];
+        self.sexPicker.headerTitleFont = [UIFont fontWithName:@"Avenir Next" size:32.f];
         self.sexPicker.delegate = self;
         self.sexPicker.dataSource = self;
         self.sexPicker.needFooterView = NO;
@@ -209,7 +178,7 @@
         self.agePicker = [[CZPickerView alloc] initWithHeaderTitle:@"Возраст" cancelButtonTitle:@"Cancel" confirmButtonTitle:@"Confirm"];
         self.agePicker.headerBackgroundColor = [UIColor whiteColor];
         self.agePicker.headerTitleColor = [UIColor colorWithRed:0.98039216f green:0.43529412f blue:0.32156863f alpha:1.f];
-        self.agePicker.headerTitleFont = [UIFont systemFontOfSize: 40];
+        self.agePicker.headerTitleFont = [UIFont fontWithName:@"Avenir Next" size:32.f];
         self.agePicker.delegate = self;
         self.agePicker.dataSource = self;
         self.agePicker.needFooterView = NO;
@@ -220,7 +189,7 @@
         self.occasionPicker = [[CZPickerView alloc] initWithHeaderTitle:@"Событие" cancelButtonTitle:@"Cancel" confirmButtonTitle:@"Confirm"];
         self.occasionPicker.headerBackgroundColor = [UIColor whiteColor];
         self.occasionPicker.headerTitleColor = [UIColor colorWithRed:0.98039216f green:0.43529412f blue:0.32156863f alpha:1.f];
-        self.occasionPicker.headerTitleFont = [UIFont systemFontOfSize: 40];
+        self.occasionPicker.headerTitleFont = [UIFont fontWithName:@"Avenir Next" size:32.f];
         self.occasionPicker.delegate = self;
         self.occasionPicker.dataSource = self;
         self.occasionPicker.needFooterView = NO;
@@ -229,12 +198,6 @@
     }
     
     return YES;
-}
-
-#pragma mark - UIPopoverPresentationControllerDelegate
-
-- (UIModalPresentationStyle)adaptivePresentationStyleForPresentationController:(UIPresentationController *)controller traitCollection:(UITraitCollection *)traitCollection {
-    return UIModalPresentationNone;
 }
 
 #pragma mark - Actions
