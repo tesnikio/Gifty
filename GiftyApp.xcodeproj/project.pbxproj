@@ -27,9 +27,6 @@
 		4CD3DF751E8D6C7000E91F19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD3DF741E8D6C7000E91F19 /* Assets.xcassets */; };
 		4CD3DF781E8D6C7000E91F19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD3DF761E8D6C7000E91F19 /* LaunchScreen.storyboard */; };
 		4CD3DF811E8D6D6600E91F19 /* NTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD3DF801E8D6D6600E91F19 /* NTMainViewController.m */; };
-		4CD3DF841E8D6F7800E91F19 /* NTSexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD3DF831E8D6F7800E91F19 /* NTSexViewController.m */; };
-		4CD3DF871E8D76FC00E91F19 /* NTAgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD3DF861E8D76FC00E91F19 /* NTAgeViewController.m */; };
-		4CD3DF8A1E8EAC4A00E91F19 /* NTOccasionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD3DF891E8EAC4A00E91F19 /* NTOccasionViewController.m */; };
 		4CD3E0241E93B48500E91F19 /* NTGiftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD3E0231E93B48500E91F19 /* NTGiftViewController.m */; };
 		4CD3E0271E93BA0300E91F19 /* NTGiftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD3E0261E93BA0300E91F19 /* NTGiftCell.m */; };
 		4CD3E0B21E994B2700E91F19 /* Male50+.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CD3E0B11E994B2700E91F19 /* Male50+.plist */; };
@@ -65,12 +62,6 @@
 		4CD3DF791E8D6C7000E91F19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CD3DF7F1E8D6D6600E91F19 /* NTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTMainViewController.h; sourceTree = "<group>"; };
 		4CD3DF801E8D6D6600E91F19 /* NTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTMainViewController.m; sourceTree = "<group>"; };
-		4CD3DF821E8D6F7800E91F19 /* NTSexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTSexViewController.h; sourceTree = "<group>"; };
-		4CD3DF831E8D6F7800E91F19 /* NTSexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTSexViewController.m; sourceTree = "<group>"; };
-		4CD3DF851E8D76FC00E91F19 /* NTAgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTAgeViewController.h; sourceTree = "<group>"; };
-		4CD3DF861E8D76FC00E91F19 /* NTAgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTAgeViewController.m; sourceTree = "<group>"; };
-		4CD3DF881E8EAC4A00E91F19 /* NTOccasionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTOccasionViewController.h; sourceTree = "<group>"; };
-		4CD3DF891E8EAC4A00E91F19 /* NTOccasionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTOccasionViewController.m; sourceTree = "<group>"; };
 		4CD3E0221E93B48500E91F19 /* NTGiftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTGiftViewController.h; sourceTree = "<group>"; };
 		4CD3E0231E93B48500E91F19 /* NTGiftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTGiftViewController.m; sourceTree = "<group>"; };
 		4CD3E0251E93BA0300E91F19 /* NTGiftCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTGiftCell.h; sourceTree = "<group>"; };
@@ -167,24 +158,10 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4CD3DF8B1E8FBC2100E91F19 /* Picker Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				4CD3DF821E8D6F7800E91F19 /* NTSexViewController.h */,
-				4CD3DF831E8D6F7800E91F19 /* NTSexViewController.m */,
-				4CD3DF851E8D76FC00E91F19 /* NTAgeViewController.h */,
-				4CD3DF861E8D76FC00E91F19 /* NTAgeViewController.m */,
-				4CD3DF881E8EAC4A00E91F19 /* NTOccasionViewController.h */,
-				4CD3DF891E8EAC4A00E91F19 /* NTOccasionViewController.m */,
-			);
-			name = "Picker Controllers";
-			sourceTree = "<group>";
-		};
 		4CD3DF8C1E8FBC4C00E91F19 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				4CD3E0A91E98EE3D00E91F19 /* Main Controller */,
-				4CD3DF8B1E8FBC2100E91F19 /* Picker Controllers */,
 				4CD3E0AA1E98EE6000E91F19 /* Data Controllers */,
 			);
 			name = Controllers;
@@ -408,13 +385,10 @@
 			files = (
 				4C07A32E1E9A868B00BBB049 /* NTGift.m in Sources */,
 				4CD3DF6D1E8D6C7000E91F19 /* AppDelegate.m in Sources */,
-				4CD3DF841E8D6F7800E91F19 /* NTSexViewController.m in Sources */,
 				4CD3DF6A1E8D6C7000E91F19 /* main.m in Sources */,
 				4CA246C01EA7682400356B91 /* RKDropdownAlert.m in Sources */,
 				4CD3E0271E93BA0300E91F19 /* NTGiftCell.m in Sources */,
 				4CD3DF811E8D6D6600E91F19 /* NTMainViewController.m in Sources */,
-				4CD3DF871E8D76FC00E91F19 /* NTAgeViewController.m in Sources */,
-				4CD3DF8A1E8EAC4A00E91F19 /* NTOccasionViewController.m in Sources */,
 				4CD3E0241E93B48500E91F19 /* NTGiftViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

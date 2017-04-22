@@ -7,12 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "NTSexViewController.h"
-#import "NTAgeViewController.h"
-#import "NTOccasionViewController.h"
+#import "NTGiftViewController.h"
 #import <CZPicker.h>
 
-@interface NTMainViewController : UIViewController <UITextFieldDelegate, UIPopoverPresentationControllerDelegate, NTSexViewControllerDelegate, NTAgeViewControllerDelegate, NTOccasionViewControllerDelegate, CZPickerViewDelegate, CZPickerViewDataSource>
+@interface NTMainViewController : UIViewController <UITextFieldDelegate, UIPopoverPresentationControllerDelegate, NTGiftViewControllerDelegate, CZPickerViewDelegate, CZPickerViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITextField *sexField;
 @property (weak, nonatomic) IBOutlet UITextField *ageField;

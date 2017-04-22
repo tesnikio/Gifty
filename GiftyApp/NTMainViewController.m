@@ -84,7 +84,6 @@
                 } else {
                     title = [[NSAttributedString alloc] initWithString:@"Международный женский день"attributes:@{ NSFontAttributeName : [UIFont fontWithName:@"Avenir Next" size:18.f] }];
                     return title;
-                    return title;
                 }
                 
                 break;
@@ -163,7 +162,7 @@
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
     
     if ([textField isEqual:self.sexField]) {
-        //[self performSegueWithIdentifier:@"showSex" sender:textField];
+        
         self.sexPicker = [[CZPickerView alloc] initWithHeaderTitle:@"Пол" cancelButtonTitle:@"Cancel" confirmButtonTitle:@"Confirm"];
         self.sexPicker.headerBackgroundColor = [UIColor whiteColor];
         self.sexPicker.headerTitleColor = [UIColor colorWithRed:0.98039216f green:0.43529412f blue:0.32156863f alpha:1.f];
@@ -172,9 +171,11 @@
         self.sexPicker.dataSource = self;
         self.sexPicker.needFooterView = NO;
         [self.sexPicker show];
+        
         return NO;
+        
     } else if ([textField isEqual:self.ageField]) {
-        //[self performSegueWithIdentifier:@"showAge" sender:textField];
+        
         self.agePicker = [[CZPickerView alloc] initWithHeaderTitle:@"Возраст" cancelButtonTitle:@"Cancel" confirmButtonTitle:@"Confirm"];
         self.agePicker.headerBackgroundColor = [UIColor whiteColor];
         self.agePicker.headerTitleColor = [UIColor colorWithRed:0.98039216f green:0.43529412f blue:0.32156863f alpha:1.f];
@@ -183,9 +184,11 @@
         self.agePicker.dataSource = self;
         self.agePicker.needFooterView = NO;
         [self.agePicker show];
+        
         return NO;
+        
     } else if ([textField isEqual:self.occasionField]) {
-        //[self performSegueWithIdentifier:@"showOccasion" sender:textField];
+        
         self.occasionPicker = [[CZPickerView alloc] initWithHeaderTitle:@"Событие" cancelButtonTitle:@"Cancel" confirmButtonTitle:@"Confirm"];
         self.occasionPicker.headerBackgroundColor = [UIColor whiteColor];
         self.occasionPicker.headerTitleColor = [UIColor colorWithRed:0.98039216f green:0.43529412f blue:0.32156863f alpha:1.f];
@@ -194,6 +197,7 @@
         self.occasionPicker.dataSource = self;
         self.occasionPicker.needFooterView = NO;
         [self.occasionPicker show];
+        
         return NO;
     }
     
