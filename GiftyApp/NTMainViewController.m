@@ -16,6 +16,8 @@
 @property (nonatomic, strong) CZPickerView *agePicker;
 @property (nonatomic, strong) CZPickerView *occasionPicker;
 
+@property (nonatomic, assign) NSInteger ageValue;
+
 @end
 
 @implementation NTMainViewController
@@ -53,6 +55,7 @@
         
         NTGiftViewController *vc = [[(UITabBarController *)segue.destinationViewController viewControllers] objectAtIndex:0];
         vc.sexFieldText = self.sexField.text;
+        vc.ageValue = self.ageValue;
         
     }
     
@@ -200,6 +203,7 @@
         self.sexField.attributedText = [self czpickerView:pickerView attributedTitleForRow:row];
     } else if ([pickerView isEqual:self.agePicker]) {
         self.ageField.attributedText = [self czpickerView:pickerView attributedTitleForRow:row];
+        self.ageValue = row + 1;
     } else if ([pickerView isEqual:self.occasionPicker]) {
         self.occasionField.attributedText = [self czpickerView:pickerView attributedTitleForRow:row];
     }

@@ -26,9 +26,30 @@ static NSString * const reuseIdentifier = @"GiftCell";
     NTGift *gift = [[NTGift alloc] init];
     
     if ([self.sexFieldText isEqualToString:@"Мужчина"]) {
-        self.gifts = [gift giftsWithAgeCategory:@"Male50+"];
+        
+        if (self.ageValue < 16) {
+            self.gifts = [gift giftsWithAgeCategory:@"Male16-"];
+        } else if (self.ageValue >= 16 && self.ageValue < 30) {
+            self.gifts = [gift giftsWithAgeCategory:@"Male16-30"];
+        } else if (self.ageValue >= 30 && self.ageValue < 50) {
+            self.gifts = [gift giftsWithAgeCategory:@"Male30-50"];
+        } else {
+            self.gifts = [gift giftsWithAgeCategory:@"Male50+"];
+        }
+        
+        
     } else {
-        self.gifts = [gift giftsWithAgeCategory:@"Female50+"];
+        
+        if (self.ageValue < 16) {
+            self.gifts = [gift giftsWithAgeCategory:@"Female16-"];
+        } else if (self.ageValue >= 16 && self.ageValue < 30) {
+            self.gifts = [gift giftsWithAgeCategory:@"Female16-30"];
+        } else if (self.ageValue >= 30 && self.ageValue < 50) {
+            self.gifts = [gift giftsWithAgeCategory:@"Female30-50"];
+        } else {
+            self.gifts = [gift giftsWithAgeCategory:@"Female50+"];
+        }
+        
     }
 
 }

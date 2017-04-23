@@ -11,5 +11,6 @@
 @interface NTGiftViewController : UICollectionViewController
 
 @property (nonatomic, strong) NSString *sexFieldText;
+@property (nonatomic, assign) NSInteger ageValue;
 
 @end
