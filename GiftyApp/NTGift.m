@@ -10,18 +10,21 @@
 
 @implementation NTGift
 
-- (NSMutableArray *) allGifts {
+- (NSMutableArray *) giftsWithAgeCategory:(NSString *) ageCategory {
     
     NSMutableArray *gifts = [NSMutableArray array];
-    NSURL *URL = [[NSBundle mainBundle] URLForResource:@"Female16-" withExtension:@"plist"];
+    
+    
+    NSURL *URL = [[NSBundle mainBundle] URLForResource:ageCategory withExtension:@"plist"];
     NSArray *giftsFromPlist = [NSArray arrayWithContentsOfURL:URL];
     
     for (NSDictionary *dict in giftsFromPlist) {
         NTGift *gift = [[NTGift alloc] initWithDictionary:dict];
         [gifts addObject:gift];
     }
-    
+        
     return gifts;
+        
 }
 
 - (id)initWithCaption:(NSString *) caption andImage:(UIImage *) image

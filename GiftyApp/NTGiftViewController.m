@@ -24,8 +24,12 @@ static NSString * const reuseIdentifier = @"GiftCell";
     [super viewDidLoad];
     
     NTGift *gift = [[NTGift alloc] init];
-        
-    self.gifts = [gift allGifts];
+    
+    if ([self.sexFieldText isEqualToString:@"Мужчина"]) {
+        self.gifts = [gift giftsWithAgeCategory:@"Male50+"];
+    } else {
+        self.gifts = [gift giftsWithAgeCategory:@"Female50+"];
+    }
 
 }
 
@@ -64,6 +68,7 @@ static NSString * const reuseIdentifier = @"GiftCell";
 #pragma mark - UICollectionViewDelegate
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
     
     
 }

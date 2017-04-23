@@ -14,6 +14,6 @@
 @property (nonatomic, strong) NSString *caption;
 @property (nonatomic, strong) UIImage *image;
 
-- (NSMutableArray *) allGifts;
+- (NSMutableArray *) giftsWithAgeCategory:(NSString *) ageCategory;
 
 @end

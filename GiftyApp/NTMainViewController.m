@@ -7,6 +7,7 @@
 //
 
 #import "NTMainViewController.h"
+#import "NTGiftViewController.h"
 #import "RKDropdownAlert.h"
 
 @interface NTMainViewController () <RKDropdownAlertDelegate>
@@ -18,97 +19,6 @@
 @end
 
 @implementation NTMainViewController
-
-#pragma mark - CZPickerViewDataSource
-
-- (NSInteger)numberOfRowsInPickerView:(CZPickerView *)pickerView {
-    
-    if ([pickerView isEqual:self.sexPicker]) {
-        return 2;
-    } else if ([pickerView isEqual:self.agePicker]) {
-        return 100;
-    } else if ([pickerView isEqual:self.occasionPicker]) {
-        return 4;
-    }
-    
-    return 0;
-}
-
-- (NSAttributedString *)czpickerView:(CZPickerView *)pickerView
-               attributedTitleForRow:(NSInteger)row {
-    
-    NSAttributedString *title = nil;
-    
-    if ([pickerView isEqual:self.sexPicker]) {
-        
-        switch (row) {
-            case 0:
-                title = [[NSAttributedString alloc] initWithString:@"Мужчина" attributes:@{ NSFontAttributeName : [UIFont fontWithName:@"Avenir Next" size:18.f] }];
-                return title;
-                break;
-            case 1:
-                title = [[NSAttributedString alloc] initWithString:@"Женщина" attributes:@{ NSFontAttributeName : [UIFont fontWithName:@"Avenir Next" size:18.f] }];
-                return title;
-                break;
-                
-            default:
-                break;
-        }
-        
-    } else if ([pickerView isEqual:self.agePicker]) {
-        
-        title = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"%ld", row + 1] attributes:@{ NSFontAttributeName : [UIFont fontWithName:@"Avenir Next" size:18.f] }];
-        
-        return title;
-    
-    } else if ([pickerView isEqual:self.occasionPicker]) {
-        
-        switch (row) {
-            case 0:
-                title = [[NSAttributedString alloc] initWithString:@"День рождения" attributes:@{ NSFontAttributeName : [UIFont fontWithName:@"Avenir Next" size:18.f] }];
-                return title;
-                break;
-            case 1:
-                title = [[NSAttributedString alloc] initWithString:@"Новый Год" attributes:@{ NSFontAttributeName : [UIFont fontWithName:@"Avenir Next" size:18.f] }];
-                return title;
-                break;
-            case 2:
-                title = [[NSAttributedString alloc] initWithString:@"День святого Валентина" attributes:@{ NSFontAttributeName : [UIFont fontWithName:@"Avenir Next" size:18.f] }];
-                return title;
-                break;
-            case 3:
-                
-                if ([self.sexField.text isEqualToString:@"Мужчина"]) {
-                    title = [[NSAttributedString alloc] initWithString:@"День защитника Отечества" attributes:@{ NSFontAttributeName : [UIFont fontWithName:@"Avenir Next" size:18.f] }];
-                    return title;
-                } else {
-                    title = [[NSAttributedString alloc] initWithString:@"Международный женский день"attributes:@{ NSFontAttributeName : [UIFont fontWithName:@"Avenir Next" size:18.f] }];
-                    return title;
-                }
-                
-                break;
-            default:
-                break;
-        }
-        
-    }
-    
-    return title;
-}
-
-#pragma mark - CZPickerViewDelegate 
-
-- (void)czpickerView:(CZPickerView *)pickerView didConfirmWithItemAtRow:(NSInteger)row {
-    
-    if ([pickerView isEqual:self.sexPicker]) {
-        self.sexField.attributedText = [self czpickerView:pickerView attributedTitleForRow:row];
-    } else if ([pickerView isEqual:self.agePicker]) {
-        self.ageField.attributedText = [self czpickerView:pickerView attributedTitleForRow:row];
-    } else if ([pickerView isEqual:self.occasionPicker]) {
-        self.occasionField.attributedText = [self czpickerView:pickerView attributedTitleForRow:row];
-    }
-    
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -141,7 +51,8 @@
     
     if ([segue.identifier isEqualToString:@"showGifts"]) {
         
-        //pass to VC something
+        NTGiftViewController *vc = [[(UITabBarController *)segue.destinationViewController viewControllers] objectAtIndex:0];
+        vc.sexFieldText = self.sexField.text;
         
     }
     
@@ -202,6 +113,97 @@
     }
     
     return YES;
+}
+
+#pragma mark - CZPickerViewDataSource
+
+- (NSInteger)numberOfRowsInPickerView:(CZPickerView *)pickerView {
+    
+    if ([pickerView isEqual:self.sexPicker]) {
+        return 2;
+    } else if ([pickerView isEqual:self.agePicker]) {
+        return 100;
+    } else if ([pickerView isEqual:self.occasionPicker]) {
+        return 4;
+    }
+    
+    return 0;
+}
+
+- (NSAttributedString *)czpickerView:(CZPickerView *)pickerView
+               attributedTitleForRow:(NSInteger)row {
+    
+    NSAttributedString *title = nil;
+    
+    if ([pickerView isEqual:self.sexPicker]) {
+        
+        switch (row) {
+            case 0:
+                title = [[NSAttributedString alloc] initWithString:@"Мужчина" attributes:@{ NSFontAttributeName : [UIFont fontWithName:@"Avenir Next" size:18.f] }];
+                return title;
+                break;
+            case 1:
+                title = [[NSAttributedString alloc] initWithString:@"Женщина" attributes:@{ NSFontAttributeName : [UIFont fontWithName:@"Avenir Next" size:18.f] }];
+                return title;
+                break;
+                
+            default:
+                break;
+        }
+        
+    } else if ([pickerView isEqual:self.agePicker]) {
+        
+        title = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"%ld", row + 1] attributes:@{ NSFontAttributeName : [UIFont fontWithName:@"Avenir Next" size:18.f] }];
+        
+        return title;
+        
+    } else if ([pickerView isEqual:self.occasionPicker]) {
+        
+        switch (row) {
+            case 0:
+                title = [[NSAttributedString alloc] initWithString:@"День рождения" attributes:@{ NSFontAttributeName : [UIFont fontWithName:@"Avenir Next" size:18.f] }];
+                return title;
+                break;
+            case 1:
+                title = [[NSAttributedString alloc] initWithString:@"Новый Год" attributes:@{ NSFontAttributeName : [UIFont fontWithName:@"Avenir Next" size:18.f] }];
+                return title;
+                break;
+            case 2:
+                title = [[NSAttributedString alloc] initWithString:@"День святого Валентина" attributes:@{ NSFontAttributeName : [UIFont fontWithName:@"Avenir Next" size:18.f] }];
+                return title;
+                break;
+            case 3:
+                
+                if ([self.sexField.text isEqualToString:@"Мужчина"]) {
+                    title = [[NSAttributedString alloc] initWithString:@"День защитника Отечества" attributes:@{ NSFontAttributeName : [UIFont fontWithName:@"Avenir Next" size:18.f] }];
+                    return title;
+                } else {
+                    title = [[NSAttributedString alloc] initWithString:@"Международный женский день"attributes:@{ NSFontAttributeName : [UIFont fontWithName:@"Avenir Next" size:18.f] }];
+                    return title;
+                }
+                
+                break;
+            default:
+                break;
+        }
+        
+    }
+    
+    return title;
+}
+
+#pragma mark - CZPickerViewDelegate
+
+- (void)czpickerView:(CZPickerView *)pickerView didConfirmWithItemAtRow:(NSInteger)row {
+    
+    if ([pickerView isEqual:self.sexPicker]) {
+        self.sexField.attributedText = [self czpickerView:pickerView attributedTitleForRow:row];
+    } else if ([pickerView isEqual:self.agePicker]) {
+        self.ageField.attributedText = [self czpickerView:pickerView attributedTitleForRow:row];
+    } else if ([pickerView isEqual:self.occasionPicker]) {
+        self.occasionField.attributedText = [self czpickerView:pickerView attributedTitleForRow:row];
+    }
+    
 }
 
 #pragma mark - Actions
