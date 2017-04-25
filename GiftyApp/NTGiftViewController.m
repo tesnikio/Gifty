@@ -14,6 +14,9 @@
 
 @property (nonatomic, strong) NSArray *gifts;
 
+@property (nonatomic, assign) CGFloat leftAndRightPaddings;
+@property (nonatomic, assign) NSInteger itemsPerRow;
+
 @end
 
 @implementation NTGiftViewController
@@ -23,11 +26,21 @@ static NSString * const reuseIdentifier = @"GiftCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.leftAndRightPaddings = 35.f;
+    self.itemsPerRow = 2;
+    
+    CGFloat width = (CGRectGetWidth(self.collectionView.frame) - self.leftAndRightPaddings) / self.itemsPerRow;
+    
+    UICollectionViewFlowLayout *layout = (UICollectionViewFlowLayout *)self.collectionViewLayout;
+    
+    layout.sectionInset = UIEdgeInsetsMake(12.f, 12.f, 60.f, 10.f);
+    layout.itemSize = CGSizeMake(width, width);
+    
     NTGift *gift = [[NTGift alloc] init];
     
     if ([self.sexFieldText isEqualToString:@"Мужчина"]) {
         
-        if (self.ageValue < 16) {
+        if (self.ageValue < 16 && [self.occasionFieldText isEqualToString:@"День рождения"]) {
             self.gifts = [gift giftsWithAgeCategory:@"Male16-"];
         } else if (self.ageValue >= 16 && self.ageValue < 30) {
             self.gifts = [gift giftsWithAgeCategory:@"Male16-30"];
@@ -36,7 +49,6 @@ static NSString * const reuseIdentifier = @"GiftCell";
         } else {
             self.gifts = [gift giftsWithAgeCategory:@"Male50+"];
         }
-        
         
     } else {
         
