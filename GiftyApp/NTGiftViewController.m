@@ -9,6 +9,7 @@
 #import "NTGiftViewController.h"
 #import "NTGiftCell.h"
 #import "NTGift.h"
+#import "NTDetailViewController.h"
 
 @interface NTGiftViewController ()
 
@@ -102,7 +103,14 @@ static NSString * const reuseIdentifier = @"GiftCell";
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
+    NTDetailViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"NTDetailViewController"];
     
+    NTGift *gift = [self.gifts objectAtIndex:indexPath.item];
+    
+    vc.imageView.image = gift.image;
+    vc.textLabel.text = gift.caption;
+    
+    [self.navigationController pushViewController:vc animated:YES];
     
 }
 
