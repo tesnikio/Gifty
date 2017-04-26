@@ -67,15 +67,15 @@ static NSString * const reuseIdentifier = @"GiftCell";
 
 }
 
-/*
+
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    
+
+    
 }
-*/
+
 
 #pragma mark - UICollectionViewDataSource
 
@@ -107,11 +107,9 @@ static NSString * const reuseIdentifier = @"GiftCell";
     
     NTGift *gift = [self.gifts objectAtIndex:indexPath.item];
     
-    vc.imageView.image = gift.image;
-    vc.textLabel.text = gift.caption;
+    vc.gift = gift;
     
     [self.navigationController pushViewController:vc animated:YES];
-    
 }
 
 @end
