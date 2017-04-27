@@ -22,6 +22,7 @@
 		4C729CD01E9A4E7200CA6B8E /* Female16-.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C729CCF1E9A4E7200CA6B8E /* Female16-.plist */; };
 		4C96FC2D1EB0A5C800AFB4E6 /* NTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C96FC2C1EB0A5C800AFB4E6 /* NTTabBarController.m */; };
 		4C96FC311EB0A8DD00AFB4E6 /* NTDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C96FC301EB0A8DD00AFB4E6 /* NTDetailViewController.m */; };
+		4C96FC351EB1F00200AFB4E6 /* UIColor+Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C96FC341EB1F00200AFB4E6 /* UIColor+Theme.m */; };
 		4CA246C01EA7682400356B91 /* RKDropdownAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA246BF1EA7682400356B91 /* RKDropdownAlert.m */; };
 		4CD3DF6A1E8D6C7000E91F19 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD3DF691E8D6C7000E91F19 /* main.m */; };
 		4CD3DF6D1E8D6C7000E91F19 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD3DF6C1E8D6C7000E91F19 /* AppDelegate.m */; };
@@ -56,6 +57,8 @@
 		4C96FC2C1EB0A5C800AFB4E6 /* NTTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTTabBarController.m; sourceTree = "<group>"; };
 		4C96FC2F1EB0A8DD00AFB4E6 /* NTDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTDetailViewController.h; sourceTree = "<group>"; };
 		4C96FC301EB0A8DD00AFB4E6 /* NTDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTDetailViewController.m; sourceTree = "<group>"; };
+		4C96FC331EB1F00200AFB4E6 /* UIColor+Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Theme.h"; sourceTree = "<group>"; };
+		4C96FC341EB1F00200AFB4E6 /* UIColor+Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Theme.m"; sourceTree = "<group>"; };
 		4CA246BE1EA7682400356B91 /* RKDropdownAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKDropdownAlert.h; sourceTree = "<group>"; };
 		4CA246BF1EA7682400356B91 /* RKDropdownAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKDropdownAlert.m; sourceTree = "<group>"; };
 		4CD3DF651E8D6C7000E91F19 /* GiftyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiftyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +123,24 @@
 			name = "Tab Bar Controller";
 			sourceTree = "<group>";
 		};
+		4C96FC321EB1E72C00AFB4E6 /* Detail Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4C96FC2F1EB0A8DD00AFB4E6 /* NTDetailViewController.h */,
+				4C96FC301EB0A8DD00AFB4E6 /* NTDetailViewController.m */,
+			);
+			name = "Detail Controller";
+			sourceTree = "<group>";
+		};
+		4C96FC361EB1F0BD00AFB4E6 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				4C96FC331EB1F00200AFB4E6 /* UIColor+Theme.h */,
+				4C96FC341EB1F00200AFB4E6 /* UIColor+Theme.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		4CA246C11EA788E100356B91 /* RKDropdownAlert */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +171,7 @@
 		4CD3DF671E8D6C7000E91F19 /* GiftyApp */ = {
 			isa = PBXGroup;
 			children = (
+				4C96FC361EB1F0BD00AFB4E6 /* Categories */,
 				4CA246C11EA788E100356B91 /* RKDropdownAlert */,
 				4CD3E0A81E98E6C800E91F19 /* Models */,
 				4CD3DF9F1E913B7A00E91F19 /* Cells */,
@@ -176,11 +198,10 @@
 		4CD3DF8C1E8FBC4C00E91F19 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4C96FC2E1EB0A5CD00AFB4E6 /* Tab Bar Controller */,
 				4CD3E0A91E98EE3D00E91F19 /* Main Controller */,
 				4CD3E0AA1E98EE6000E91F19 /* Data Controllers */,
-				4C96FC2E1EB0A5CD00AFB4E6 /* Tab Bar Controller */,
-				4C96FC2F1EB0A8DD00AFB4E6 /* NTDetailViewController.h */,
-				4C96FC301EB0A8DD00AFB4E6 /* NTDetailViewController.m */,
+				4C96FC321EB1E72C00AFB4E6 /* Detail Controller */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -402,6 +423,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C07A32E1E9A868B00BBB049 /* NTGift.m in Sources */,
+				4C96FC351EB1F00200AFB4E6 /* UIColor+Theme.m in Sources */,
 				4C96FC2D1EB0A5C800AFB4E6 /* NTTabBarController.m in Sources */,
 				4CD3DF6D1E8D6C7000E91F19 /* AppDelegate.m in Sources */,
 				4CD3DF6A1E8D6C7000E91F19 /* main.m in Sources */,

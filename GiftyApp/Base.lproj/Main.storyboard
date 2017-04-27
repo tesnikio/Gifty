@@ -41,7 +41,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Пол" textAlignment="center" minimumFontSize="17" background="textField" translatesAutoresizingMaskIntoConstraints="NO" id="uSI-Yf-IQA">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Пол" textAlignment="center" minimumFontSize="17" background="borderedField" translatesAutoresizingMaskIntoConstraints="NO" id="uSI-Yf-IQA">
                                 <rect key="frame" x="62" y="314.5" width="250" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="5VH-td-34R"/>
@@ -53,7 +53,7 @@
                                     <outlet property="delegate" destination="YuM-GA-dYF" id="udX-KH-Azy"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Возраст" textAlignment="center" minimumFontSize="17" background="textField" translatesAutoresizingMaskIntoConstraints="NO" id="CL2-Sk-QNW">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Возраст" textAlignment="center" minimumFontSize="17" background="borderedField" translatesAutoresizingMaskIntoConstraints="NO" id="CL2-Sk-QNW">
                                 <rect key="frame" x="62" y="382.5" width="250" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="APl-eS-O4K"/>
@@ -65,7 +65,7 @@
                                     <outlet property="delegate" destination="YuM-GA-dYF" id="xs3-tN-rIM"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Событие" textAlignment="center" minimumFontSize="14" background="textField" translatesAutoresizingMaskIntoConstraints="NO" id="1zN-zG-CLh">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Событие" textAlignment="center" minimumFontSize="14" background="borderedField" translatesAutoresizingMaskIntoConstraints="NO" id="1zN-zG-CLh">
                                 <rect key="frame" x="62" y="450.5" width="250" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="8X9-ZN-AU1"/>
@@ -149,7 +149,6 @@
         <!--Item-->
         <scene sceneID="vrq-xZ-Wfr">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lqC-4t-eZs" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="NTDetailViewController" id="Nhu-Gu-baf" customClass="NTDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yQM-iO-pQd"/>
@@ -158,35 +157,19 @@
                     <view key="view" contentMode="scaleToFill" id="KWa-9n-jh8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dAl-dL-6Pd">
-                                <rect key="frame" x="0.0" y="65" width="375" height="196"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Udy-Xh-14z">
-                                <rect key="frame" x="67" y="269" width="240" height="123"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="7V3-dc-aJv"/>
-                    <connections>
-                        <outlet property="imageView" destination="dAl-dL-6Pd" id="O7m-1c-J6J"/>
-                        <outlet property="textLabel" destination="Udy-Xh-14z" id="ZX5-gB-wUt"/>
-                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lqC-4t-eZs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2693.5999999999999" y="-304.4977511244378"/>
+            <point key="canvasLocation" x="2702" y="-304"/>
         </scene>
         <!--Подарки-->
         <scene sceneID="1hA-Ot-YdA">
             <objects>
                 <collectionViewController id="Wd1-aw-lLo" customClass="NTGiftViewController" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="FdS-JP-366">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="FdS-JP-366">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -270,7 +253,7 @@
     </scenes>
     <resources>
         <image name="AppLogo" width="664" height="888"/>
+        <image name="borderedField" width="500" height="75"/>
         <image name="magnifying-glass-2" width="512" height="512"/>
-        <image name="textField" width="500" height="75"/>
     </resources>
 </document>

@@ -2,7 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "textField.png",
+      "filename" : "borderedField.png",
       "scale" : "1x"
     },
     {

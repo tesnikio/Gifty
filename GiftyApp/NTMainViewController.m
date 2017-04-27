@@ -9,6 +9,7 @@
 #import "NTMainViewController.h"
 #import "NTGiftViewController.h"
 #import "RKDropdownAlert.h"
+#import "UIColor+Theme.h"
 
 @interface NTMainViewController () <RKDropdownAlertDelegate>
 
@@ -25,12 +26,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init]
-//                                                  forBarMetrics:UIBarMetricsDefault];
-//    self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
-//    self.navigationController.navigationBar.translucent = YES;
-//    self.navigationController.view.backgroundColor = [UIColor clearColor];
-//    self.navigationController.navigationBar.backgroundColor = [UIColor clearColor];
+    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init]
+                                                  forBarMetrics:UIBarMetricsDefault];
+    self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
+    self.navigationController.navigationBar.translucent = YES;
+    self.navigationController.view.backgroundColor = [UIColor clearColor];
+    self.navigationController.navigationBar.backgroundColor = [UIColor clearColor];
 }
 
 #pragma mark - RKDropdownAlertDelegate
@@ -80,7 +81,7 @@
         
         self.sexPicker = [[CZPickerView alloc] initWithHeaderTitle:@"Пол" cancelButtonTitle:@"Cancel" confirmButtonTitle:@"Confirm"];
         self.sexPicker.headerBackgroundColor = [UIColor whiteColor];
-        self.sexPicker.headerTitleColor = [UIColor colorWithRed:0.98039216f green:0.43529412f blue:0.32156863f alpha:1.f];
+        self.sexPicker.headerTitleColor = [UIColor themeColor];
         self.sexPicker.headerTitleFont = [UIFont fontWithName:@"Avenir Next" size:32.f];
         self.sexPicker.delegate = self;
         self.sexPicker.dataSource = self;
@@ -93,7 +94,7 @@
         
         self.agePicker = [[CZPickerView alloc] initWithHeaderTitle:@"Возраст" cancelButtonTitle:@"Cancel" confirmButtonTitle:@"Confirm"];
         self.agePicker.headerBackgroundColor = [UIColor whiteColor];
-        self.agePicker.headerTitleColor = [UIColor colorWithRed:0.98039216f green:0.43529412f blue:0.32156863f alpha:1.f];
+        self.agePicker.headerTitleColor = [UIColor themeColor];
         self.agePicker.headerTitleFont = [UIFont fontWithName:@"Avenir Next" size:32.f];
         self.agePicker.delegate = self;
         self.agePicker.dataSource = self;
@@ -106,7 +107,7 @@
         
         self.occasionPicker = [[CZPickerView alloc] initWithHeaderTitle:@"Событие" cancelButtonTitle:@"Cancel" confirmButtonTitle:@"Confirm"];
         self.occasionPicker.headerBackgroundColor = [UIColor whiteColor];
-        self.occasionPicker.headerTitleColor = [UIColor colorWithRed:0.98039216f green:0.43529412f blue:0.32156863f alpha:1.f];
+        self.occasionPicker.headerTitleColor = [UIColor themeColor];
         self.occasionPicker.headerTitleFont = [UIFont fontWithName:@"Avenir Next" size:32.f];
         self.occasionPicker.delegate = self;
         self.occasionPicker.dataSource = self;
@@ -219,7 +220,7 @@
         
         [RKDropdownAlert title:@"Ошибка!"
                        message:@"Заполните все поля для ввода!"
-               backgroundColor:[UIColor colorWithRed:0.98039216f green:0.43529412f blue:0.32156863f alpha:1.f]
+               backgroundColor:[UIColor themeColor]
                      textColor:[UIColor whiteColor]
                           time:1
                       delegate:self];

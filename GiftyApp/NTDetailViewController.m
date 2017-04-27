@@ -18,8 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.imageView.image = self.gift.image;
-    self.textLabel.text = self.gift.caption;
+    
     
 }
 
