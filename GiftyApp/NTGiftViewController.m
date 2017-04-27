@@ -10,6 +10,7 @@
 #import "NTGiftCell.h"
 #import "NTGift.h"
 #import "NTDetailViewController.h"
+#import "UIColor+Theme.h"
 
 @interface NTGiftViewController ()
 

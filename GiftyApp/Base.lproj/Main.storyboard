@@ -84,7 +84,7 @@
                                     <constraint firstAttribute="width" constant="44" id="xy1-qo-1eG"/>
                                 </constraints>
                                 <color key="tintColor" red="0.93833202123641968" green="0.42340335249900818" blue="0.3111366331577301" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="magnifying-glass-2"/>
+                                <state key="normal" image="searchButton"/>
                                 <connections>
                                     <action selector="searchButtonAction:" destination="YuM-GA-dYF" eventType="touchUpInside" id="eik-dc-rV9"/>
                                     <segue destination="xuw-lU-e5E" kind="show" identifier="showGifts" id="D0f-pW-YZi"/>
@@ -127,7 +127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z2O-ZT-dQd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="282.39999999999998" y="244.22788605697153"/>
+            <point key="canvasLocation" x="225" y="243"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="bIN-v6-eFb">
@@ -144,7 +144,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PP5-C0-XTG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1092" y="243"/>
+            <point key="canvasLocation" x="1023" y="243"/>
         </scene>
         <!--Item-->
         <scene sceneID="vrq-xZ-Wfr">
@@ -163,7 +163,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lqC-4t-eZs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2702" y="-304"/>
+            <point key="canvasLocation" x="2701.5999999999999" y="-304.4977511244378"/>
         </scene>
         <!--Подарки-->
         <scene sceneID="1hA-Ot-YdA">
@@ -254,6 +254,6 @@
     <resources>
         <image name="AppLogo" width="664" height="888"/>
         <image name="borderedField" width="500" height="75"/>
-        <image name="magnifying-glass-2" width="512" height="512"/>
+        <image name="searchButton" width="512" height="512"/>
     </resources>
 </document>
