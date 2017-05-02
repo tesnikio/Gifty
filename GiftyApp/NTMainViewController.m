@@ -35,14 +35,6 @@
     
     [super viewDidLoad];
     
-    
-//    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init]
-//                                                  forBarMetrics:UIBarMetricsDefault];
-//    self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
-//    self.navigationController.navigationBar.translucent = YES;
-//    self.navigationController.view.backgroundColor = [UIColor clearColor];
-//    self.navigationController.navigationBar.backgroundColor = [UIColor clearColor];
-    
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
     self.navigationController.navigationBar.tintColor = [UIColor themeColor];
 }
