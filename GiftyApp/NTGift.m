@@ -27,12 +27,13 @@
         
 }
 
-- (id)initWithCaption:(NSString *) caption andImage:(UIImage *) image
+- (id)initWithCaption:(NSString *) caption andImage:(UIImage *) image includingDescription:(NSString *) descriprion
 {
     self = [super init];
     if (self) {
         
         self.caption = caption;
+        self.description = descriprion;
         self.image = image;
         
     }
@@ -43,10 +44,11 @@
 {
     
     NSString *caption = [dictionary objectForKey:@"Caption"];
+    NSString *description = [dictionary objectForKey:@"Description"];
     NSString *photoName = [dictionary objectForKey:@"Photo"];
     UIImage *image = [UIImage imageNamed:photoName];
     
-    return [self initWithCaption:caption andImage:image];
+    return [self initWithCaption:caption andImage:image includingDescription:description];
 }
 
 @end

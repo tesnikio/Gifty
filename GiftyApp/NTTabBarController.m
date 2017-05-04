@@ -7,6 +7,7 @@
 //
 
 #import "NTTabBarController.h"
+#import "UIColor+Theme.h"
 
 @interface NTTabBarController ()
 
@@ -17,6 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+    self.navigationController.navigationBar.tintColor = [UIColor themeColor];
     
 }
 
