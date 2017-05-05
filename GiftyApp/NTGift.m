@@ -33,7 +33,7 @@
     if (self) {
         
         self.caption = caption;
-        self.description = descriprion;
+        self.descriptionText = descriprion;
         self.image = image;
         
     }
@@ -44,11 +44,11 @@
 {
     
     NSString *caption = [dictionary objectForKey:@"Caption"];
-    NSString *description = [dictionary objectForKey:@"Description"];
+    NSString *descriptionText = [dictionary objectForKey:@"Description"];
     NSString *photoName = [dictionary objectForKey:@"Photo"];
     UIImage *image = [UIImage imageNamed:photoName];
     
-    return [self initWithCaption:caption andImage:image includingDescription:description];
+    return [self initWithCaption:caption andImage:image includingDescription:descriptionText];
 }
 
 @end

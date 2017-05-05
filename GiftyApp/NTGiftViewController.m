@@ -42,7 +42,7 @@ static NSString * const reuseIdentifier = @"GiftCell";
     
     if ([self.sexFieldText isEqualToString:@"Мужчина"]) {
         
-        if (self.ageValue < 16 && [self.occasionFieldText isEqualToString:@"День рождения"]) {
+        if (self.ageValue < 16) {
             self.gifts = [gift giftsWithAgeCategory:@"Male16-"];
         } else if (self.ageValue >= 16 && self.ageValue < 30) {
             self.gifts = [gift giftsWithAgeCategory:@"Male16-30"];

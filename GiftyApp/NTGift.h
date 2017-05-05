@@ -12,7 +12,7 @@
 @interface NTGift : NSObject
 
 @property (nonatomic, strong) NSString *caption;
-@property (nonatomic, strong) NSString *description;
+@property (nonatomic, strong) NSString *descriptionText;
 @property (nonatomic, strong) UIImage *image;
 
 - (NSMutableArray *) giftsWithAgeCategory:(NSString *) ageCategory;
