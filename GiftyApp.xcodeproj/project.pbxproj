@@ -23,6 +23,8 @@
 		4C96FC2D1EB0A5C800AFB4E6 /* NTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C96FC2C1EB0A5C800AFB4E6 /* NTTabBarController.m */; };
 		4C96FC311EB0A8DD00AFB4E6 /* NTDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C96FC301EB0A8DD00AFB4E6 /* NTDetailViewController.m */; };
 		4C96FC351EB1F00200AFB4E6 /* UIColor+Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C96FC341EB1F00200AFB4E6 /* UIColor+Theme.m */; };
+		4C96FC601EC361C700AFB4E6 /* FemaleAdd.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C96FC5F1EC361C700AFB4E6 /* FemaleAdd.xcassets */; };
+		4C96FC621EC361E600AFB4E6 /* FemaleAdd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C96FC611EC361E600AFB4E6 /* FemaleAdd.plist */; };
 		4CA246C01EA7682400356B91 /* RKDropdownAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA246BF1EA7682400356B91 /* RKDropdownAlert.m */; };
 		4CD3DF6A1E8D6C7000E91F19 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD3DF691E8D6C7000E91F19 /* main.m */; };
 		4CD3DF6D1E8D6C7000E91F19 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD3DF6C1E8D6C7000E91F19 /* AppDelegate.m */; };
@@ -59,6 +61,8 @@
 		4C96FC301EB0A8DD00AFB4E6 /* NTDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTDetailViewController.m; sourceTree = "<group>"; };
 		4C96FC331EB1F00200AFB4E6 /* UIColor+Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Theme.h"; sourceTree = "<group>"; };
 		4C96FC341EB1F00200AFB4E6 /* UIColor+Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Theme.m"; sourceTree = "<group>"; };
+		4C96FC5F1EC361C700AFB4E6 /* FemaleAdd.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = FemaleAdd.xcassets; path = GiftyApp/FemaleAdd.xcassets; sourceTree = "<group>"; };
+		4C96FC611EC361E600AFB4E6 /* FemaleAdd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FemaleAdd.plist; sourceTree = "<group>"; };
 		4CA246BE1EA7682400356B91 /* RKDropdownAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKDropdownAlert.h; sourceTree = "<group>"; };
 		4CA246BF1EA7682400356B91 /* RKDropdownAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKDropdownAlert.m; sourceTree = "<group>"; };
 		4CD3DF651E8D6C7000E91F19 /* GiftyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiftyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -227,6 +231,7 @@
 				4C07A3311E9A87C900BBB049 /* Male30-50.xcassets */,
 				4C07A3331E9A87E200BBB049 /* Male16-30.xcassets */,
 				4C07A3351E9A880200BBB049 /* Male16-.xcassets */,
+				4C96FC5F1EC361C700AFB4E6 /* FemaleAdd.xcassets */,
 			);
 			name = Assets;
 			path = ..;
@@ -243,6 +248,7 @@
 				4C729CC71E9A3B6B00CA6B8E /* Female30-50.plist */,
 				4C729CCB1E9A435600CA6B8E /* Female16-30.plist */,
 				4C729CCF1E9A4E7200CA6B8E /* Female16-.plist */,
+				4C96FC611EC361E600AFB4E6 /* FemaleAdd.plist */,
 			);
 			name = "Property Lists";
 			sourceTree = "<group>";
@@ -350,6 +356,7 @@
 				4C729CC81E9A3B6B00CA6B8E /* Female30-50.plist in Resources */,
 				4C729CBC1E9A38EC00CA6B8E /* Female50+.plist in Resources */,
 				4C729CCE1E9A4E6800CA6B8E /* Female16-.xcassets in Resources */,
+				4C96FC601EC361C700AFB4E6 /* FemaleAdd.xcassets in Resources */,
 				4CD3E0BA1E9958F800E91F19 /* Male16-30.plist in Resources */,
 				4CD3E0BE1E9960A500E91F19 /* Male16-.plist in Resources */,
 				4C729CBA1E9A38B600CA6B8E /* Female50+.xcassets in Resources */,
@@ -358,6 +365,7 @@
 				4C729CC61E9A3B5E00CA6B8E /* Female30-50.xcassets in Resources */,
 				4CD3DF751E8D6C7000E91F19 /* Assets.xcassets in Resources */,
 				4C729CD01E9A4E7200CA6B8E /* Female16-.plist in Resources */,
+				4C96FC621EC361E600AFB4E6 /* FemaleAdd.plist in Resources */,
 				4C07A3341E9A87E200BBB049 /* Male16-30.xcassets in Resources */,
 				4C07A3301E9A872100BBB049 /* Male50+.xcassets in Resources */,
 				4CD3E0B61E99535700E91F19 /* Male30-50.plist in Resources */,
