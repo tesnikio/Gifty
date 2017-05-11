@@ -43,25 +43,83 @@ static NSString * const reuseIdentifier = @"GiftCell";
     if ([self.sexFieldText isEqualToString:@"Мужчина"]) {
         
         if (self.ageValue < 16) {
+            
             self.gifts = [gift giftsWithAgeCategory:@"Male16-"];
+            
         } else if (self.ageValue >= 16 && self.ageValue < 30) {
+            
             self.gifts = [gift giftsWithAgeCategory:@"Male16-30"];
+            
+            if ([self.occasionFieldText isEqualToString:@"День рождения"] || [self.occasionFieldText isEqualToString:@"Новый год"]) {
+                
+                NSArray *additionalGifts = [gift giftsWithAgeCategory:@"MaleAdd"];
+    
+                self.gifts = [self.gifts arrayByAddingObjectsFromArray:additionalGifts];
+            }
+            
         } else if (self.ageValue >= 30 && self.ageValue < 50) {
+            
             self.gifts = [gift giftsWithAgeCategory:@"Male30-50"];
+            
+            if ([self.occasionFieldText isEqualToString:@"День рождения"] || [self.occasionFieldText isEqualToString:@"Новый год"]) {
+                
+                NSArray *additionalGifts = [gift giftsWithAgeCategory:@"MaleAdd"];
+                
+                self.gifts = [self.gifts arrayByAddingObjectsFromArray:additionalGifts];
+            }
+            
         } else {
+            
             self.gifts = [gift giftsWithAgeCategory:@"Male50+"];
+            
+            if ([self.occasionFieldText isEqualToString:@"День рождения"] || [self.occasionFieldText isEqualToString:@"Новый год"] || [self.occasionFieldText isEqualToString:@"День святого Валентина"]) {
+                
+                NSArray *additionalGifts = [gift giftsWithAgeCategory:@"MaleAdd"];
+                
+                self.gifts = [self.gifts arrayByAddingObjectsFromArray:additionalGifts];
+            }
+            
         }
         
     } else {
         
         if (self.ageValue < 16) {
+            
             self.gifts = [gift giftsWithAgeCategory:@"Female16-"];
+            
         } else if (self.ageValue >= 16 && self.ageValue < 30) {
+            
             self.gifts = [gift giftsWithAgeCategory:@"Female16-30"];
+            
+            if ([self.occasionFieldText isEqualToString:@"День рождения"] || [self.occasionFieldText isEqualToString:@"Новый Год"] || [self.occasionFieldText isEqualToString:@"День святого Валентина"] || [self.occasionFieldText isEqualToString:@"Международный женский день"]) {
+                
+                NSArray *additionalGifts = [gift giftsWithAgeCategory:@"FemaleAdd"];
+                
+                self.gifts = [self.gifts arrayByAddingObjectsFromArray:additionalGifts];
+            }
+            
         } else if (self.ageValue >= 30 && self.ageValue < 50) {
+            
             self.gifts = [gift giftsWithAgeCategory:@"Female30-50"];
+            
+            if ([self.occasionFieldText isEqualToString:@"День рождения"] || [self.occasionFieldText isEqualToString:@"Новый год"]) {
+                
+                NSArray *additionalGifts = [gift giftsWithAgeCategory:@"FemaleAdd"];
+                
+                self.gifts = [self.gifts arrayByAddingObjectsFromArray:additionalGifts];
+            }
+            
         } else {
+            
             self.gifts = [gift giftsWithAgeCategory:@"Female50+"];
+            
+            if ([self.occasionFieldText isEqualToString:@"День рождения"] || [self.occasionFieldText isEqualToString:@"Новый год"] || [self.occasionFieldText isEqualToString:@"Международный женский день"]) {
+                
+                NSArray *additionalGifts = [gift giftsWithAgeCategory:@"FemaleAdd"];
+                
+                self.gifts = [self.gifts arrayByAddingObjectsFromArray:additionalGifts];
+            }
+            
         }
         
     }
@@ -110,7 +168,7 @@ static NSString * const reuseIdentifier = @"GiftCell";
     
     vc.gift = gift;
     
-    [self.navigationController pushViewController:vc animated:YES];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 @end

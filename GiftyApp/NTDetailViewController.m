@@ -36,4 +36,10 @@
 }
 */
 
+- (IBAction)okAction:(UIButton *)sender {
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+}
+
 @end
