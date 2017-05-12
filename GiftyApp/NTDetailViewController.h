@@ -12,7 +12,7 @@
 @interface NTDetailViewController : UIViewController
 
 @property (strong, nonatomic) NTGift *gift;
-- (IBAction)okAction:(UIButton *)sender;
 
+- (IBAction)okAction:(UIButton *)sender;
 
 @end

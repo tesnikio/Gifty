@@ -1,12 +1,15 @@
 PODS:
   - CZPicker (0.4.3)
+  - ZFDragableModalTransition (0.6)
 
 DEPENDENCIES:
   - CZPicker
+  - ZFDragableModalTransition
 
 SPEC CHECKSUMS:
   CZPicker: 55aa1751ea26e209814552da1a9a08cba8bbf72a
+  ZFDragableModalTransition: 0d294eaaba6edfcb9839595de765f9ca06a4b524
 
-PODFILE CHECKSUM: c6b154142d97d5f843593b9055b61b93d72d627e
+PODFILE CHECKSUM: dcc96559083d86bc3ff2d9dc5b9c341b9b8cc14e
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.2.1

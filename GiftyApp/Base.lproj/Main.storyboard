@@ -252,6 +252,7 @@
                                 <connections>
                                     <outlet property="captionLabel" destination="Ksp-Yw-pGj" id="MmO-TI-FXw"/>
                                     <outlet property="imageView" destination="Fhg-PG-WlS" id="CNH-Tc-fYe"/>
+                                    <segue destination="Nhu-Gu-baf" kind="presentation" identifier="showDetailGift" id="OwB-E4-Lgo"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
