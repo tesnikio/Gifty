@@ -11,11 +11,8 @@
 #import "NTGift.h"
 #import "NTDetailViewController.h"
 #import "UIColor+Theme.h"
-#import <ZFModalTransitionAnimator.h>
 
 @interface NTGiftViewController ()
-
-@property (nonatomic, strong) ZFModalTransitionAnimator *animator;
 
 @property (nonatomic, strong) NSArray *gifts;
 
@@ -161,7 +158,7 @@ static NSString * const reuseIdentifier = @"GiftCell";
     
     vc.gift = gift;
     
-    [self presentViewController:vc animated:YES completion:nil];
+    [self.navigationController pushViewController:vc animated:YES];
      
 }
 

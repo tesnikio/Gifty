@@ -158,29 +158,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFs-b6-Nly">
-                                <rect key="frame" x="295" y="20" width="60" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="9aB-gh-Wpa">
+                                <rect key="frame" x="16" y="242" width="343" height="405"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9fw-RN-1ny">
+                                <rect key="frame" x="48" y="28" width="279" height="206"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="lmf-H9-qpc"/>
-                                    <constraint firstAttribute="height" constant="40" id="lva-0A-PUv"/>
+                                    <constraint firstAttribute="height" constant="206" id="B6r-DM-2T7"/>
+                                    <constraint firstAttribute="width" constant="279" id="Gsj-Sc-DGa"/>
                                 </constraints>
-                                <state key="normal" title="OK"/>
-                                <connections>
-                                    <action selector="okAction:" destination="Nhu-Gu-baf" eventType="touchUpInside" id="XnZ-4M-WrO"/>
-                                </connections>
-                            </button>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="ZFs-b6-Nly" secondAttribute="trailing" constant="20" id="4bT-Tl-8kG"/>
-                            <constraint firstItem="ZFs-b6-Nly" firstAttribute="top" secondItem="yQM-iO-pQd" secondAttribute="bottom" id="YHS-vc-TzK"/>
+                            <constraint firstItem="9aB-gh-Wpa" firstAttribute="leading" secondItem="KWa-9n-jh8" secondAttribute="leading" constant="16" id="3Zu-wY-JnS"/>
+                            <constraint firstItem="9fw-RN-1ny" firstAttribute="top" secondItem="yQM-iO-pQd" secondAttribute="bottom" constant="8" id="LAB-QN-fQ6"/>
+                            <constraint firstItem="6dw-Sj-8qj" firstAttribute="top" secondItem="9aB-gh-Wpa" secondAttribute="bottom" constant="20" id="S5h-wX-Kbp"/>
+                            <constraint firstItem="9aB-gh-Wpa" firstAttribute="top" secondItem="9fw-RN-1ny" secondAttribute="bottom" constant="8" id="Ul3-wC-I17"/>
+                            <constraint firstAttribute="trailing" secondItem="9aB-gh-Wpa" secondAttribute="trailing" constant="16" id="f7S-7U-IQY"/>
+                            <constraint firstItem="9fw-RN-1ny" firstAttribute="leading" secondItem="KWa-9n-jh8" secondAttribute="leading" constant="48" id="kzJ-Gv-vBa"/>
+                            <constraint firstAttribute="trailing" secondItem="9fw-RN-1ny" secondAttribute="trailing" constant="48" id="rY9-e2-GMy"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="7V3-dc-aJv"/>
+                    <connections>
+                        <outlet property="imageView" destination="9fw-RN-1ny" id="oNo-De-zXl"/>
+                        <outlet property="textLabel" destination="9aB-gh-Wpa" id="Bcn-PN-Eng"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lqC-4t-eZs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2662.3188405797105" y="-304.07608695652175"/>
+            <point key="canvasLocation" x="2661.5999999999999" y="-304.4977511244378"/>
         </scene>
         <!--Подарки-->
         <scene sceneID="1hA-Ot-YdA">
@@ -252,7 +263,6 @@
                                 <connections>
                                     <outlet property="captionLabel" destination="Ksp-Yw-pGj" id="MmO-TI-FXw"/>
                                     <outlet property="imageView" destination="Fhg-PG-WlS" id="CNH-Tc-fYe"/>
-                                    <segue destination="Nhu-Gu-baf" kind="presentation" identifier="showDetailGift" id="OwB-E4-Lgo"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>

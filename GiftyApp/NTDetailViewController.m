@@ -18,12 +18,26 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.imageView.image = self.gift.image;
+    self.textLabel.text = self.gift.descriptionText;
+    
+    //UIBarButtonItem *starredItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(starredAction:)];
+    
+    UIBarButtonItem *starredItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"favouriteStar"] style:UIBarButtonItemStylePlain target:self action:@selector(starredAction:)];
+    
+    self.navigationItem.rightBarButtonItem = starredItem;
     
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)starredAction:(UIBarButtonItem *)sender {
+    
+    
+    
 }
 
 /*
@@ -36,10 +50,5 @@
 }
 */
 
-- (IBAction)okAction:(UIButton *)sender {
-    
-    [self dismissViewControllerAnimated:YES completion:nil];
-    
-}
 
 @end
