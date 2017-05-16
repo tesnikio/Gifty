@@ -21,8 +21,6 @@
     self.imageView.image = self.gift.image;
     self.textLabel.text = self.gift.descriptionText;
     
-    //UIBarButtonItem *starredItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(starredAction:)];
-    
     UIBarButtonItem *starredItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"favouriteStar"] style:UIBarButtonItemStylePlain target:self action:@selector(starredAction:)];
     
     self.navigationItem.rightBarButtonItem = starredItem;
