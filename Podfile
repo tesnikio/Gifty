@@ -9,6 +9,5 @@ target 'GiftyApp' do
 
 pod "CZPicker"
 pod "ZFDragableModalTransition"
-pod "BATabBarController"
 
 end

@@ -1,21 +1,15 @@
 PODS:
-  - BATabBarController (0.1.4):
-    - Masonry
   - CZPicker (0.4.3)
-  - Masonry (1.0.2)
   - ZFDragableModalTransition (0.6)
 
 DEPENDENCIES:
-  - BATabBarController
   - CZPicker
   - ZFDragableModalTransition
 
 SPEC CHECKSUMS:
-  BATabBarController: 7bd7a21d65a1df9f08586adb17622da1c58f44a5
   CZPicker: 55aa1751ea26e209814552da1a9a08cba8bbf72a
-  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   ZFDragableModalTransition: 0d294eaaba6edfcb9839595de765f9ca06a4b524
 
-PODFILE CHECKSUM: aea00a7c1e194de6a33c0593eee8755b8ae26460
+PODFILE CHECKSUM: dcc96559083d86bc3ff2d9dc5b9c341b9b8cc14e
 
 COCOAPODS: 1.2.1

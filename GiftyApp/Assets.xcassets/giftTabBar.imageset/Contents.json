@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "giftTabBar.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "giftTabBar.png",
       "scale" : "2x"
     },
     {
