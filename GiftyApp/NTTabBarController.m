@@ -16,9 +16,10 @@
 
 @implementation NTTabBarController
 
+#pragma mark - Lifecycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
     self.navigationController.navigationBar.tintColor = [UIColor themeColor];
@@ -27,6 +28,12 @@
     
     self.tabBar.tintColor = [UIColor themeColor];
     self.tabBar.barTintColor = [UIColor whiteColor];
+    
+    self.navigationItem.title = @"Подарки";
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:[UIColor themeColor],
+       NSFontAttributeName:[UIFont fontWithName:@"Avenir Next" size:21]}];
+
 }
 
 @end

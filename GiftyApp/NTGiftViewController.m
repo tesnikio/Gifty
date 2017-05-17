@@ -25,6 +25,8 @@
 
 static NSString * const reuseIdentifier = @"GiftCell";
 
+#pragma mark - Lifecycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     

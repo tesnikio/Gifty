@@ -23,6 +23,8 @@
 
 @implementation NTMainViewController
 
+#pragma mark - Lifecycle
+
 - (void)viewWillAppear:(BOOL)animated {
     
     [self.navigationController setNavigationBarHidden:YES animated:YES];
