@@ -187,20 +187,21 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9fw-RN-1ny">
                                 <rect key="frame" x="48" y="28" width="279" height="206"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="206" id="B6r-DM-2T7"/>
-                                    <constraint firstAttribute="width" constant="279" id="Gsj-Sc-DGa"/>
+                                    <constraint firstAttribute="height" constant="206" id="NBz-ym-WkS"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="9aB-gh-Wpa" firstAttribute="leading" secondItem="KWa-9n-jh8" secondAttribute="leading" constant="16" id="3Zu-wY-JnS"/>
-                            <constraint firstItem="9fw-RN-1ny" firstAttribute="top" secondItem="yQM-iO-pQd" secondAttribute="bottom" constant="8" id="LAB-QN-fQ6"/>
-                            <constraint firstItem="6dw-Sj-8qj" firstAttribute="top" secondItem="9aB-gh-Wpa" secondAttribute="bottom" constant="20" id="S5h-wX-Kbp"/>
-                            <constraint firstItem="9aB-gh-Wpa" firstAttribute="top" secondItem="9fw-RN-1ny" secondAttribute="bottom" constant="8" id="Ul3-wC-I17"/>
-                            <constraint firstAttribute="trailing" secondItem="9aB-gh-Wpa" secondAttribute="trailing" constant="16" id="f7S-7U-IQY"/>
-                            <constraint firstItem="9fw-RN-1ny" firstAttribute="leading" secondItem="KWa-9n-jh8" secondAttribute="leading" constant="48" id="kzJ-Gv-vBa"/>
-                            <constraint firstAttribute="trailing" secondItem="9fw-RN-1ny" secondAttribute="trailing" constant="48" id="rY9-e2-GMy"/>
+                            <constraint firstItem="9aB-gh-Wpa" firstAttribute="leading" secondItem="KWa-9n-jh8" secondAttribute="leading" constant="16" id="CsM-jl-cWb"/>
+                            <constraint firstItem="9aB-gh-Wpa" firstAttribute="top" secondItem="9fw-RN-1ny" secondAttribute="bottom" constant="8" symbolic="YES" id="PcX-8l-TOW"/>
+                            <constraint firstItem="9fw-RN-1ny" firstAttribute="top" secondItem="yQM-iO-pQd" secondAttribute="bottom" constant="8" id="QIg-i5-Ri4"/>
+                            <constraint firstAttribute="trailing" secondItem="9aB-gh-Wpa" secondAttribute="trailing" constant="16" id="SJp-Qk-R2i"/>
+                            <constraint firstItem="9aB-gh-Wpa" firstAttribute="top" secondItem="9fw-RN-1ny" secondAttribute="bottom" constant="8" id="afz-Ho-KAz"/>
+                            <constraint firstAttribute="trailing" secondItem="9fw-RN-1ny" secondAttribute="trailing" constant="48" id="kTF-O1-j7U"/>
+                            <constraint firstItem="6dw-Sj-8qj" firstAttribute="top" secondItem="9aB-gh-Wpa" secondAttribute="bottom" constant="20" id="qXj-sI-PoP"/>
+                            <constraint firstItem="9fw-RN-1ny" firstAttribute="leading" secondItem="KWa-9n-jh8" secondAttribute="leading" constant="48" id="rdd-hj-PK0"/>
+                            <constraint firstItem="9fw-RN-1ny" firstAttribute="centerX" secondItem="9aB-gh-Wpa" secondAttribute="centerX" id="wfe-QD-rgC"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="7V3-dc-aJv"/>

@@ -10,6 +10,9 @@
 
 @interface NTDetailViewController ()
 
+@property (nonatomic, strong) UIBarButtonItem *starredItem;
+@property (nonatomic, assign) BOOL isStarred;
+
 @end
 
 @implementation NTDetailViewController
@@ -21,9 +24,9 @@
     self.imageView.image = self.gift.image;
     self.textLabel.text = self.gift.descriptionText;
     
-    UIBarButtonItem *starredItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"favouriteStar"] style:UIBarButtonItemStylePlain target:self action:@selector(starredAction:)];
+    self.starredItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"favouriteStar"] style:UIBarButtonItemStylePlain target:self action:@selector(starredAction:)];
     
-    self.navigationItem.rightBarButtonItem = starredItem;
+    self.navigationItem.rightBarButtonItem = self.starredItem;
     
 }
 
@@ -34,7 +37,13 @@
 
 - (void)starredAction:(UIBarButtonItem *)sender {
     
-    
+    if (!self.isStarred) {
+        self.starredItem.image = [UIImage imageNamed:@"selectedStar"];
+        self.isStarred = YES;
+    } else {
+        self.starredItem.image = [UIImage imageNamed:@"favouriteStar"];
+        self.isStarred = NO;
+    }
     
 }
 
