@@ -7,6 +7,7 @@
 //
 
 #import "NTDetailViewController.h"
+#import "UIColor+Theme.h"
 
 @interface NTDetailViewController ()
 
@@ -24,12 +25,21 @@
     
     self.imageView.image = self.gift.image;
     self.textLabel.text = self.gift.descriptionText;
-    
-    self.navigationItem.title = self.gift.caption;
-    
+        
     self.starredItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"favouriteStar"] style:UIBarButtonItemStylePlain target:self action:@selector(starredAction:)];
     
     self.navigationItem.rightBarButtonItem = self.starredItem;
+    
+    
+    self.title = self.gift.caption;
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0,0, 200, 40)];
+    label.text = self.navigationItem.title;
+    label.textColor = [UIColor themeColor];
+    label.font = [UIFont fontWithName:@"Avenir Next" size:21.f];
+    label.backgroundColor = [UIColor clearColor];
+    label.adjustsFontSizeToFitWidth = YES;
+    label.textAlignment = NSTextAlignmentCenter;
+    self.navigationItem.titleView = label;
     
 }
 

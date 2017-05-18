@@ -31,8 +31,9 @@
     
     self.navigationItem.title = @"Подарки";
     [self.navigationController.navigationBar setTitleTextAttributes:
-     @{NSForegroundColorAttributeName:[UIColor themeColor],
-       NSFontAttributeName:[UIFont fontWithName:@"Avenir Next" size:21]}];
+     @{ NSForegroundColorAttributeName:[UIColor themeColor],
+       NSFontAttributeName:[UIFont fontWithName:@"Avenir Next" size:21] }];
+    
 
 }
 

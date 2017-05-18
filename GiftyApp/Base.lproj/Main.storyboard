@@ -170,7 +170,7 @@
                             <outlet property="delegate" destination="yBK-tV-rfu" id="bop-KM-ZR5"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Избранное" id="x2h-Q4-zCk"/>
+                    <tabBarItem key="tabBarItem" title="Избранное" image="tabBarItemFavourites" selectedImage="tabBarItemFavourites" id="x2h-Q4-zCk"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CIV-eF-LbW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -302,7 +302,7 @@
                             <outlet property="delegate" destination="Wd1-aw-lLo" id="p2y-c9-ydz"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Подарки" id="uVs-rp-qlq"/>
+                    <tabBarItem key="tabBarItem" title="Подарки" image="tabBarItemGift" selectedImage="tabBarItemGift" id="uVs-rp-qlq"/>
                     <navigationItem key="navigationItem" id="7op-A0-ktH"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mB1-LX-O4d" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -314,5 +314,7 @@
         <image name="AppLogo" width="664" height="888"/>
         <image name="borderedField" width="500" height="75"/>
         <image name="searchButton" width="512" height="512"/>
+        <image name="tabBarItemFavourites" width="25" height="25"/>
+        <image name="tabBarItemGift" width="27" height="27"/>
     </resources>
 </document>
