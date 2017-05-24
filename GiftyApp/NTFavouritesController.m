@@ -2,7 +2,7 @@
 //  NTFavouritesController.m
 //  GiftyApp
 //
-//  Created by Nikita Teslyuk on 17.05.17.
+//  Created by Nikita Teslyuk on 20.05.17.
 //  Copyright © 2017 Nikita Teslyuk. All rights reserved.
 //
 
@@ -14,34 +14,30 @@
 
 @implementation NTFavouritesController
 
-#pragma mark - Lifecycle
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    // Do any additional setup after loading the view.
 }
-
-
 
 #pragma mark - UITableViewDataSource
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 0;
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
     return 0;
+    
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    // Configure the cell...
+    static NSString *cellIdentifier = @"Cell";
+    
+    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    }
     
     return cell;
 }
-*/
-
 
 @end
