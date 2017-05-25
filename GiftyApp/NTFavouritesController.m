@@ -10,13 +10,37 @@
 
 @interface NTFavouritesController ()
 
+@property (nonatomic, strong) NSMutableArray *theFavorites;
+
 @end
 
 @implementation NTFavouritesController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSError *error;
+    NSArray *pathsArray = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    
+    NSString *documentDirectoryPath = [pathsArray objectAtIndex:0];
+    
+    NSString *destinationPath = [documentDirectoryPath stringByAppendingPathComponent:@"Favorites.plist"];
+    
+    if ([fileManager fileExistsAtPath:destinationPath]) {
+        
+        
+        
+    } else {
+        
+        NSString *sourcePath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Favorites.plist"];
+        
+        [fileManager copyItemAtPath:sourcePath toPath:destinationPath error:&error];
+    }
+    
+    self.theFavorites = [NSMutableArray arrayWithContentsOfFile:destinationPath];
+    
 }
 
 #pragma mark - UITableViewDataSource

@@ -12,7 +12,9 @@
 @interface NTDetailViewController ()
 
 @property (nonatomic, strong) UIBarButtonItem *starredItem;
+@property (nonatomic, strong) NSString *favoriteFilter;
 @property (nonatomic, assign) BOOL isStarred;
+@property (nonatomic, assign) BOOL currentGiftFavorite;
 
 @end
 
@@ -41,9 +43,15 @@
     label.textAlignment = NSTextAlignmentCenter;
     self.navigationItem.titleView = label;
     
+    
+    self.favoriteFilter = self.gift.caption;
+    self.currentGiftFavorite = [self checkIfFavorites];
+    
+    
+    
 }
 
-#pragma mark - Actions
+#pragma mark - Favorites
 
 - (void)starredAction:(UIBarButtonItem *)sender {
     
@@ -55,6 +63,12 @@
         self.isStarred = NO;
     }
     
+}
+
+- (BOOL)checkIfFavorites {
+    
+    
+    return NO;
 }
 
 

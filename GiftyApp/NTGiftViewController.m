@@ -15,6 +15,7 @@
 @interface NTGiftViewController ()
 
 @property (nonatomic, strong) NSArray *gifts;
+@property (nonatomic, strong) NSString *currentPlistName;
 
 @property (nonatomic, assign) CGFloat leftAndRightPaddings;
 @property (nonatomic, assign) NSInteger itemsPerRow;
