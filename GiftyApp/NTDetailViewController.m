@@ -12,9 +12,11 @@
 @interface NTDetailViewController ()
 
 @property (nonatomic, strong) UIBarButtonItem *starredItem;
+
+@property (nonatomic, assign) BOOL isFavorites;
+@property (nonatomic, strong) NSArray *giftData;
 @property (nonatomic, strong) NSString *favoriteFilter;
-@property (nonatomic, assign) BOOL isStarred;
-@property (nonatomic, assign) BOOL currentGiftFavorite;
+@property (nonatomic, assign) BOOL *currentGiftFavorite;
 
 @end
 
@@ -44,9 +46,19 @@
     self.navigationItem.titleView = label;
     
     
-    self.favoriteFilter = self.gift.caption;
-    self.currentGiftFavorite = [self checkIfFavorites];
-    
+    if (self.isFavorites) {
+        NSArray *pathsArray = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString *documentDirectoryPath = [pathsArray objectAtIndex:0];
+        NSString *destinationPath = [documentDirectoryPath stringByAppendingPathComponent:@"Favorites.plist"];
+        
+        self.giftData = [NSArray arrayWithContentsOfFile:destinationPath];
+        
+    } else {
+        
+        NSString *plistFile = [[NSBundle mainBundle] pathForResource:@"Gift Category!!!" ofType:@"plist"];
+        self.giftData = [NSArray arrayWithContentsOfFile:plistFile];
+        
+    }
     
     
 }
@@ -55,12 +67,12 @@
 
 - (void)starredAction:(UIBarButtonItem *)sender {
     
-    if (!self.isStarred) {
+    if (!self.isFavorites) {
         self.starredItem.image = [UIImage imageNamed:@"selectedStar"];
-        self.isStarred = YES;
+        self.isFavorites = YES;
     } else {
         self.starredItem.image = [UIImage imageNamed:@"favouriteStar"];
-        self.isStarred = NO;
+        self.isFavorites = NO;
     }
     
 }
