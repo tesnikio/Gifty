@@ -47,7 +47,9 @@ static NSString * const reuseIdentifier = @"GiftCell";
         
         if (self.ageValue < 16) {
             
-            self.gifts = [gift giftsWithAgeCategory:@"Male16-"];
+            self.currentPlistName = @"Male16-";
+            
+            self.gifts = [gift giftsWithAgeCategory:self.currentPlistName];
             
         } else if (self.ageValue >= 16 && self.ageValue < 30) {
             
@@ -160,6 +162,7 @@ static NSString * const reuseIdentifier = @"GiftCell";
     NTGift *gift = [self.gifts objectAtIndex:indexPath.item];
     
     vc.gift = gift;
+    vc.currentPlist = self.currentPlistName;
     
     [self.navigationController pushViewController:vc animated:YES];
      

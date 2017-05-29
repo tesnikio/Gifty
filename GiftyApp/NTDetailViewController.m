@@ -55,9 +55,19 @@
         
     } else {
         
-        NSString *plistFile = [[NSBundle mainBundle] pathForResource:@"Gift Category!!!" ofType:@"plist"];
+        NSString *plistFile = [[NSBundle mainBundle] pathForResource:self.currentPlist ofType:@"plist"];
         self.giftData = [NSArray arrayWithContentsOfFile:plistFile];
         
+    }
+    
+    
+    self.favoriteFilter = self.gift.caption;
+    self.isFavorites = [self checkIfFavorites];
+    
+    if (self.currentGiftFavorite) {
+        self.starredItem.image = [UIImage imageNamed:@"selectedStar"];
+    } else {
+        self.starredItem.image = [UIImage imageNamed:@"favouriteStar"];
     }
     
     
@@ -67,20 +77,67 @@
 
 - (void)starredAction:(UIBarButtonItem *)sender {
     
-    if (!self.isFavorites) {
+    NSString *plistFile = [[NSBundle mainBundle] pathForResource:self.currentPlist ofType:@"plist"];
+    NSArray *gifts = [NSArray arrayWithContentsOfFile:plistFile];
+    
+    NSArray *pathsArray = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentDirectoryPath = [pathsArray objectAtIndex:0];
+    NSString *favoritesDestinationPath = [documentDirectoryPath stringByAppendingString:@"Favorites.plist"];
+    NSMutableArray *theFavs = [NSMutableArray arrayWithContentsOfFile:favoritesDestinationPath];
+    
+    NSArray *newFavorite;
+    
+    for (int i = 0; i < gifts.count; i++) {
+        if ([[[gifts objectAtIndex:i] objectForKey:@"Caption"] isEqualToString:self.favoriteFilter]) {
+            newFavorite = [gifts objectAtIndex:i];
+        }
+    }
+    
+    if (![theFavs containsObject:newFavorite]) {
+        [theFavs insertObject:newFavorite atIndex:[theFavs count]];
+        [theFavs writeToFile:favoritesDestinationPath atomically:YES];
+        
         self.starredItem.image = [UIImage imageNamed:@"selectedStar"];
-        self.isFavorites = YES;
+        
     } else {
-        self.starredItem.image = [UIImage imageNamed:@"favouriteStar"];
-        self.isFavorites = NO;
+        
+        
+        
     }
     
 }
 
 - (BOOL)checkIfFavorites {
     
+    BOOL isCurrentFavorite;
     
-    return NO;
+    NSString *plistFile = [[NSBundle mainBundle] pathForResource:self.currentPlist ofType:@"plist"];
+    NSArray *gifts = [NSArray arrayWithContentsOfFile:plistFile];
+    
+    NSArray *pathsArray = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentDirectoryPath = [pathsArray objectAtIndex:0];
+    NSString *favoritesDestinationPath = [documentDirectoryPath stringByAppendingString:@"Favorites.plist"];
+    NSMutableArray *theFavs = [NSMutableArray arrayWithContentsOfFile:favoritesDestinationPath];
+    
+    NSArray *newFavorite;
+    
+    for (int i = 0; i < gifts.count; i++) {
+        if ([[[gifts objectAtIndex:i] objectForKey:@"Caption"] isEqualToString:self.favoriteFilter]) {
+            newFavorite = [gifts objectAtIndex:i];
+        }
+    }
+    
+    if (![theFavs containsObject:newFavorite]) {
+        
+        isCurrentFavorite = NO;
+        
+    } else {
+        
+        isCurrentFavorite = YES;
+        
+    }
+    
+    return isCurrentFavorite;
 }
 
 
