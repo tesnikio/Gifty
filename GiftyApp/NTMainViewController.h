@@ -16,8 +16,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *occasionField;
 @property (weak, nonatomic) IBOutlet UIButton *searchButton;
 
-@property (strong, nonatomic) NSIndexPath *selectedRowAtIndexPath;
-
 - (IBAction)searchButtonAction:(UIButton *)sender;
 
 @end

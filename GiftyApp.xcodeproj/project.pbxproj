@@ -41,7 +41,6 @@
 		4CD3E0B61E99535700E91F19 /* Male30-50.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CD3E0B51E99535700E91F19 /* Male30-50.plist */; };
 		4CD3E0BA1E9958F800E91F19 /* Male16-30.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CD3E0B91E9958F800E91F19 /* Male16-30.plist */; };
 		4CD3E0BE1E9960A500E91F19 /* Male16-.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CD3E0BD1E9960A500E91F19 /* Male16-.plist */; };
-		4CF43EA81ED6FC5F00B4BD35 /* Favorites.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CF43EA71ED6FC5F00B4BD35 /* Favorites.plist */; };
 		D904F9BAA989FE787D98581A /* libPods-GiftyApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 925C9149517AEEFB0D6E5630 /* libPods-GiftyApp.a */; };
 /* End PBXBuildFile section */
 
@@ -92,7 +91,6 @@
 		4CD3E0B51E99535700E91F19 /* Male30-50.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Male30-50.plist"; sourceTree = "<group>"; };
 		4CD3E0B91E9958F800E91F19 /* Male16-30.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Male16-30.plist"; sourceTree = "<group>"; };
 		4CD3E0BD1E9960A500E91F19 /* Male16-.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Male16-.plist"; sourceTree = "<group>"; };
-		4CF43EA71ED6FC5F00B4BD35 /* Favorites.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Favorites.plist; sourceTree = "<group>"; };
 		67F35D1DCB8798E59D8E1131 /* Pods-GiftyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiftyApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-GiftyApp/Pods-GiftyApp.release.xcconfig"; sourceTree = "<group>"; };
 		925C9149517AEEFB0D6E5630 /* libPods-GiftyApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GiftyApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB4007751723A43E180C6047 /* Pods-GiftyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiftyApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GiftyApp/Pods-GiftyApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -270,7 +268,6 @@
 				4C729CCF1E9A4E7200CA6B8E /* Female16-.plist */,
 				4C96FC611EC361E600AFB4E6 /* FemaleAdd.plist */,
 				4C96FC651EC372CA00AFB4E6 /* MaleAdd.plist */,
-				4CF43EA71ED6FC5F00B4BD35 /* Favorites.plist */,
 			);
 			name = "Property Lists";
 			sourceTree = "<group>";
@@ -385,7 +382,6 @@
 				4C96FC661EC372CA00AFB4E6 /* MaleAdd.plist in Resources */,
 				4C07A3321E9A87C900BBB049 /* Male30-50.xcassets in Resources */,
 				4C07A3361E9A880200BBB049 /* Male16-.xcassets in Resources */,
-				4CF43EA81ED6FC5F00B4BD35 /* Favorites.plist in Resources */,
 				4C729CC61E9A3B5E00CA6B8E /* Female30-50.xcassets in Resources */,
 				4C96FC641EC372B300AFB4E6 /* MaleAdd.xcassets in Resources */,
 				4CD3DF751E8D6C7000E91F19 /* Assets.xcassets in Resources */,
