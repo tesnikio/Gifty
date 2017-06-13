@@ -11,13 +11,6 @@
 
 @interface NTDetailViewController ()
 
-@property (nonatomic, strong) UIBarButtonItem *starredItem;
-
-@property (nonatomic, assign) BOOL isFavorites;
-@property (nonatomic, strong) NSArray *giftData;
-@property (nonatomic, strong) NSString *favoriteFilter;
-@property (nonatomic, assign) BOOL *currentGiftFavorite;
-
 @end
 
 @implementation NTDetailViewController
@@ -28,28 +21,24 @@
     [super viewDidLoad];
     
     self.imageView.image = self.gift.image;
-    self.textLabel.text = self.gift.descriptionText;
-        
-//    self.starredItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"favouriteStar"] style:UIBarButtonItemStylePlain target:self action:@selector(starredAction:)];
-//    
-//    self.navigationItem.rightBarButtonItem = self.starredItem;
+    self.textView.text = self.gift.descriptionText;
     
+    self.imageView.layer.cornerRadius = self.imageView.frame.size.height / 2;
+    self.imageView.layer.masksToBounds = YES;
+    self.imageView.layer.borderWidth = 3.f;
+    self.imageView.layer.borderColor = [[UIColor themeColor] CGColor];
     
     self.title = self.gift.caption;
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0,0, 200, 40)];
     label.text = self.navigationItem.title;
     label.textColor = [UIColor themeColor];
-    label.font = [UIFont fontWithName:@"Avenir Next" size:21.f];
+    label.font = [UIFont fontWithName:@"Avenir Next" size:18.f];
     label.backgroundColor = [UIColor clearColor];
     label.adjustsFontSizeToFitWidth = YES;
     label.textAlignment = NSTextAlignmentCenter;
     self.navigationItem.titleView = label;
     
 }
-
-#pragma mark - Favorites
-
-
 
 
 @end

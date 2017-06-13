@@ -68,7 +68,7 @@
     
     if ([segue.identifier isEqualToString:@"showGifts"]) {
         
-        NTGiftViewController *vc = [[(UITabBarController *)segue.destinationViewController viewControllers] objectAtIndex:0];
+        NTGiftViewController *vc = segue.destinationViewController;
         vc.sexFieldText = self.sexField.text;
         vc.ageValue = self.ageValue;
         vc.occasionFieldText = self.occasionField.text;

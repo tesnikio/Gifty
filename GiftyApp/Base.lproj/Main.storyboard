@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -87,7 +88,7 @@
                                 <state key="normal" image="searchButton"/>
                                 <connections>
                                     <action selector="searchButtonAction:" destination="YuM-GA-dYF" eventType="touchUpInside" id="eik-dc-rV9"/>
-                                    <segue destination="xuw-lU-e5E" kind="show" identifier="showGifts" id="D0f-pW-YZi"/>
+                                    <segue destination="Wd1-aw-lLo" kind="show" identifier="showGifts" id="OkZ-lY-9t3"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppLogo" translatesAutoresizingMaskIntoConstraints="NO" id="oyQ-vR-f3p">
@@ -129,23 +130,6 @@
             </objects>
             <point key="canvasLocation" x="274" y="243"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="bIN-v6-eFb">
-            <objects>
-                <tabBarController id="xuw-lU-e5E" customClass="NTTabBarController" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="EXa-45-1Xs">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="Wd1-aw-lLo" kind="relationship" relationship="viewControllers" id="gwB-DW-Tjv"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PP5-C0-XTG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1057" y="243"/>
-        </scene>
         <!--Item-->
         <scene sceneID="vrq-xZ-Wfr">
             <objects>
@@ -158,41 +142,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="9aB-gh-Wpa">
-                                <rect key="frame" x="16" y="242" width="343" height="405"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="21"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9fw-RN-1ny">
-                                <rect key="frame" x="48" y="28" width="279" height="206"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9fw-RN-1ny" customClass="NTCornerRadiusImage">
+                                <rect key="frame" x="47" y="28" width="280" height="280"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="206" id="NBz-ym-WkS"/>
+                                    <constraint firstAttribute="width" secondItem="9fw-RN-1ny" secondAttribute="height" multiplier="1:1" id="rQY-iQ-P9I"/>
                                 </constraints>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r0G-ej-hEJ">
+                                <rect key="frame" x="16" y="316" width="343" height="331"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="9aB-gh-Wpa" firstAttribute="leading" secondItem="KWa-9n-jh8" secondAttribute="leading" constant="16" id="CsM-jl-cWb"/>
-                            <constraint firstItem="9aB-gh-Wpa" firstAttribute="top" secondItem="9fw-RN-1ny" secondAttribute="bottom" constant="8" symbolic="YES" id="PcX-8l-TOW"/>
-                            <constraint firstItem="9fw-RN-1ny" firstAttribute="top" secondItem="yQM-iO-pQd" secondAttribute="bottom" constant="8" id="QIg-i5-Ri4"/>
-                            <constraint firstAttribute="trailing" secondItem="9aB-gh-Wpa" secondAttribute="trailing" constant="16" id="SJp-Qk-R2i"/>
-                            <constraint firstItem="9aB-gh-Wpa" firstAttribute="top" secondItem="9fw-RN-1ny" secondAttribute="bottom" constant="8" id="afz-Ho-KAz"/>
-                            <constraint firstAttribute="trailing" secondItem="9fw-RN-1ny" secondAttribute="trailing" constant="48" id="kTF-O1-j7U"/>
-                            <constraint firstItem="6dw-Sj-8qj" firstAttribute="top" secondItem="9aB-gh-Wpa" secondAttribute="bottom" constant="20" id="qXj-sI-PoP"/>
-                            <constraint firstItem="9fw-RN-1ny" firstAttribute="leading" secondItem="KWa-9n-jh8" secondAttribute="leading" constant="48" id="rdd-hj-PK0"/>
-                            <constraint firstItem="9fw-RN-1ny" firstAttribute="centerX" secondItem="9aB-gh-Wpa" secondAttribute="centerX" id="wfe-QD-rgC"/>
+                            <constraint firstItem="9fw-RN-1ny" firstAttribute="leading" secondItem="KWa-9n-jh8" secondAttribute="leading" constant="47" id="01K-95-42H"/>
+                            <constraint firstItem="r0G-ej-hEJ" firstAttribute="top" secondItem="9fw-RN-1ny" secondAttribute="bottom" constant="8" id="4nD-9e-C9n"/>
+                            <constraint firstItem="9fw-RN-1ny" firstAttribute="top" secondItem="yQM-iO-pQd" secondAttribute="bottom" constant="8" id="5W5-tG-Mpg"/>
+                            <constraint firstAttribute="trailing" secondItem="9fw-RN-1ny" secondAttribute="trailing" constant="48" id="HFG-Ho-wU8"/>
+                            <constraint firstAttribute="trailing" secondItem="r0G-ej-hEJ" secondAttribute="trailing" constant="16" id="Kzu-hk-Hu2"/>
+                            <constraint firstItem="r0G-ej-hEJ" firstAttribute="leading" secondItem="KWa-9n-jh8" secondAttribute="leading" constant="16" id="PO5-hg-XHs"/>
+                            <constraint firstItem="6dw-Sj-8qj" firstAttribute="top" secondItem="r0G-ej-hEJ" secondAttribute="bottom" constant="20" id="pIf-XZ-2H9"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="7V3-dc-aJv"/>
                     <connections>
                         <outlet property="imageView" destination="9fw-RN-1ny" id="oNo-De-zXl"/>
-                        <outlet property="textLabel" destination="9aB-gh-Wpa" id="Bcn-PN-Eng"/>
+                        <outlet property="textView" destination="r0G-ej-hEJ" id="ZoH-Y9-Saj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lqC-4t-eZs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2775" y="-119"/>
+            <point key="canvasLocation" x="2773.5999999999999" y="-119.1904047976012"/>
         </scene>
         <!--Подарки-->
         <scene sceneID="1hA-Ot-YdA">
@@ -226,17 +209,17 @@
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Ksp-Yw-pGj">
-                                                        <rect key="frame" x="0.0" y="0.0" width="180" height="58"/>
+                                                        <rect key="frame" x="3" y="2" width="174" height="54"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstItem="Ksp-Yw-pGj" firstAttribute="leading" secondItem="8sJ-d4-ou5" secondAttribute="leading" id="2cY-EY-yqS"/>
-                                                    <constraint firstAttribute="bottom" secondItem="Ksp-Yw-pGj" secondAttribute="bottom" id="ZT0-Ct-7Dz"/>
-                                                    <constraint firstAttribute="trailing" secondItem="Ksp-Yw-pGj" secondAttribute="trailing" id="dwB-38-TnG"/>
-                                                    <constraint firstItem="Ksp-Yw-pGj" firstAttribute="top" secondItem="8sJ-d4-ou5" secondAttribute="top" id="i53-1Q-ZsM"/>
+                                                    <constraint firstItem="Ksp-Yw-pGj" firstAttribute="top" secondItem="8sJ-d4-ou5" secondAttribute="top" constant="2" id="2J5-Kt-Q3F"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Ksp-Yw-pGj" secondAttribute="bottom" constant="2" id="3nq-2n-cXT"/>
+                                                    <constraint firstItem="Ksp-Yw-pGj" firstAttribute="leading" secondItem="8sJ-d4-ou5" secondAttribute="leading" constant="3" id="h2N-zb-3hQ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Ksp-Yw-pGj" secondAttribute="trailing" constant="3" id="neR-GW-NBs"/>
                                                 </constraints>
                                             </view>
                                             <constraints>

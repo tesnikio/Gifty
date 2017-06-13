@@ -14,6 +14,6 @@
 @property (strong, nonatomic) NTGift *gift;
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
-@property (weak, nonatomic) IBOutlet UILabel *textLabel;
+@property (weak, nonatomic) IBOutlet UITextView *textView;
 
 @end

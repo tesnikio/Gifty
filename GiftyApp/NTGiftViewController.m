@@ -37,7 +37,7 @@ static NSString * const reuseIdentifier = @"GiftCell";
     
     UICollectionViewFlowLayout *layout = (UICollectionViewFlowLayout *)self.collectionViewLayout;
     
-    layout.sectionInset = UIEdgeInsetsMake(12.f, 12.f, 60.f, 10.f);
+    //layout.sectionInset = UIEdgeInsetsMake(12.f, 12.f, 60.f, 10.f);
     layout.itemSize = CGSizeMake(width, width);
     
     NTGift *gift = [[NTGift alloc] init];
@@ -125,6 +125,15 @@ static NSString * const reuseIdentifier = @"GiftCell";
         }
         
     }
+    
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+    self.navigationController.navigationBar.tintColor = [UIColor themeColor];
+    self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
+    
+    self.navigationItem.title = @"Подарки";
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     @{ NSForegroundColorAttributeName:[UIColor themeColor],
+        NSFontAttributeName:[UIFont fontWithName:@"Avenir Next" size:21] }];
 
 }
 
