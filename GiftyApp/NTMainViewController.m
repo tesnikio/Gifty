@@ -143,7 +143,7 @@
     } else if ([pickerView isEqual:self.agePicker]) {
         return 100;
     } else if ([pickerView isEqual:self.occasionPicker]) {
-        return 4;
+        return 3;
     }
     
     return 0;
@@ -191,17 +191,6 @@
                 title = [[NSAttributedString alloc] initWithString:@"День святого Валентина" attributes:@{ NSFontAttributeName : [UIFont fontWithName:@"Avenir Next" size:18.f] }];
                 return title;
                 break;
-            case 3:
-                
-                if ([self.sexField.text isEqualToString:@"Мужчина"]) {
-                    title = [[NSAttributedString alloc] initWithString:@"День защитника Отечества" attributes:@{ NSFontAttributeName : [UIFont fontWithName:@"Avenir Next" size:18.f] }];
-                    return title;
-                } else {
-                    title = [[NSAttributedString alloc] initWithString:@"Международный женский день"attributes:@{ NSFontAttributeName : [UIFont fontWithName:@"Avenir Next" size:18.f] }];
-                    return title;
-                }
-                
-                break;
             default:
                 break;
         }
@@ -238,10 +227,6 @@
                      textColor:[UIColor whiteColor]
                           time:1
                       delegate:self];
-        
-    } else {
-        
-        //code to be executed
         
     }
     

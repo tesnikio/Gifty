@@ -93,7 +93,7 @@ static NSString * const reuseIdentifier = @"GiftCell";
             
             self.gifts = [gift giftsWithAgeCategory:@"Female16-30"];
             
-            if ([self.occasionFieldText isEqualToString:@"День рождения"] || [self.occasionFieldText isEqualToString:@"Новый Год"] || [self.occasionFieldText isEqualToString:@"День святого Валентина"] || [self.occasionFieldText isEqualToString:@"Международный женский день"]) {
+            if ([self.occasionFieldText isEqualToString:@"День рождения"] || [self.occasionFieldText isEqualToString:@"Новый Год"] || [self.occasionFieldText isEqualToString:@"День святого Валентина"]) {
                 
                 NSArray *additionalGifts = [gift giftsWithAgeCategory:@"FemaleAdd"];
                 
@@ -115,7 +115,7 @@ static NSString * const reuseIdentifier = @"GiftCell";
             
             self.gifts = [gift giftsWithAgeCategory:@"Female50+"];
             
-            if ([self.occasionFieldText isEqualToString:@"День рождения"] || [self.occasionFieldText isEqualToString:@"Новый год"] || [self.occasionFieldText isEqualToString:@"Международный женский день"]) {
+            if ([self.occasionFieldText isEqualToString:@"День рождения"] || [self.occasionFieldText isEqualToString:@"Новый год"]) {
                 
                 NSArray *additionalGifts = [gift giftsWithAgeCategory:@"FemaleAdd"];
                 

@@ -9,7 +9,7 @@
 #import "NTDetailViewController.h"
 #import "UIColor+Theme.h"
 
-@interface NTDetailViewController ()
+@interface NTDetailViewController () <UITextViewDelegate>
 
 @end
 
@@ -22,6 +22,8 @@
     
     self.imageView.image = self.gift.image;
     self.textView.text = self.gift.descriptionText;
+    
+    self.textView.delegate = self;
     
     self.imageView.layer.cornerRadius = self.imageView.frame.size.height / 2;
     self.imageView.layer.masksToBounds = YES;
@@ -37,6 +39,14 @@
     label.adjustsFontSizeToFitWidth = YES;
     label.textAlignment = NSTextAlignmentCenter;
     self.navigationItem.titleView = label;
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    
+    [super viewDidAppear:animated];
+    
+    [self.textView scrollRangeToVisible:NSMakeRange(0, 0)];
     
 }
 
