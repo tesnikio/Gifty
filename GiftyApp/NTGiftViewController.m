@@ -15,7 +15,6 @@
 @interface NTGiftViewController ()
 
 @property (nonatomic, strong) NSArray *gifts;
-@property (nonatomic, strong) NSString *currentPlistName;
 
 @property (nonatomic, assign) CGFloat leftAndRightPaddings;
 @property (nonatomic, assign) NSInteger itemsPerRow;
@@ -46,10 +45,8 @@ static NSString * const reuseIdentifier = @"GiftCell";
     if ([self.sexFieldText isEqualToString:@"Мужчина"]) {
         
         if (self.ageValue < 16) {
-            
-            self.currentPlistName = @"Male16-";
-            
-            self.gifts = [gift giftsWithAgeCategory:self.currentPlistName];
+        
+            self.gifts = [gift giftsWithAgeCategory:@"Male16-"];
             
         } else if (self.ageValue >= 16 && self.ageValue < 30) {
             
@@ -162,7 +159,6 @@ static NSString * const reuseIdentifier = @"GiftCell";
     NTGift *gift = [self.gifts objectAtIndex:indexPath.item];
     
     vc.gift = gift;
-    vc.currentPlist = self.currentPlistName;
     
     [self.navigationController pushViewController:vc animated:YES];
      
