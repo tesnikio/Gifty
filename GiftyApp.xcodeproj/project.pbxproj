@@ -12,7 +12,7 @@
 		4C07A3321E9A87C900BBB049 /* Male30-50.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C07A3311E9A87C900BBB049 /* Male30-50.xcassets */; };
 		4C07A3341E9A87E200BBB049 /* Male16-30.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C07A3331E9A87E200BBB049 /* Male16-30.xcassets */; };
 		4C07A3361E9A880200BBB049 /* Male16-.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C07A3351E9A880200BBB049 /* Male16-.xcassets */; };
-		4C6AD8731EF03947000F4B77 /* NTCornerRadiusImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6AD8721EF03947000F4B77 /* NTCornerRadiusImage.m */; };
+		4C6AD8771EF0815C000F4B77 /* NTCornerRadiusImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6AD8761EF0815C000F4B77 /* NTCornerRadiusImage.m */; };
 		4C729CBA1E9A38B600CA6B8E /* Female50+.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C729CB91E9A38B600CA6B8E /* Female50+.xcassets */; };
 		4C729CBC1E9A38EC00CA6B8E /* Female50+.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C729CBB1E9A38EC00CA6B8E /* Female50+.plist */; };
 		4C729CC61E9A3B5E00CA6B8E /* Female30-50.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C729CC51E9A3B5E00CA6B8E /* Female30-50.xcassets */; };
@@ -49,8 +49,8 @@
 		4C07A3311E9A87C900BBB049 /* Male30-50.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Male30-50.xcassets"; path = "GiftyApp/Male30-50.xcassets"; sourceTree = "<group>"; };
 		4C07A3331E9A87E200BBB049 /* Male16-30.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Male16-30.xcassets"; path = "GiftyApp/Male16-30.xcassets"; sourceTree = "<group>"; };
 		4C07A3351E9A880200BBB049 /* Male16-.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Male16-.xcassets"; path = "GiftyApp/Male16-.xcassets"; sourceTree = "<group>"; };
-		4C6AD8711EF03947000F4B77 /* NTCornerRadiusImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NTCornerRadiusImage.h; path = ../NTCornerRadiusImage.h; sourceTree = "<group>"; };
-		4C6AD8721EF03947000F4B77 /* NTCornerRadiusImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NTCornerRadiusImage.m; path = ../NTCornerRadiusImage.m; sourceTree = "<group>"; };
+		4C6AD8751EF0815C000F4B77 /* NTCornerRadiusImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTCornerRadiusImage.h; sourceTree = "<group>"; };
+		4C6AD8761EF0815C000F4B77 /* NTCornerRadiusImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTCornerRadiusImage.m; sourceTree = "<group>"; };
 		4C729CB91E9A38B600CA6B8E /* Female50+.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Female50+.xcassets"; path = "GiftyApp/Female50+.xcassets"; sourceTree = "<group>"; };
 		4C729CBB1E9A38EC00CA6B8E /* Female50+.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Female50+.plist"; sourceTree = "<group>"; };
 		4C729CC51E9A3B5E00CA6B8E /* Female30-50.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Female30-50.xcassets"; path = "GiftyApp/Female30-50.xcassets"; sourceTree = "<group>"; };
@@ -125,8 +125,8 @@
 		4C6AD8741EF03961000F4B77 /* Image View */ = {
 			isa = PBXGroup;
 			children = (
-				4C6AD8711EF03947000F4B77 /* NTCornerRadiusImage.h */,
-				4C6AD8721EF03947000F4B77 /* NTCornerRadiusImage.m */,
+				4C6AD8751EF0815C000F4B77 /* NTCornerRadiusImage.h */,
+				4C6AD8761EF0815C000F4B77 /* NTCornerRadiusImage.m */,
 			);
 			name = "Image View";
 			sourceTree = "<group>";
@@ -438,12 +438,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C6AD8771EF0815C000F4B77 /* NTCornerRadiusImage.m in Sources */,
 				4C07A32E1E9A868B00BBB049 /* NTGift.m in Sources */,
 				4C96FC351EB1F00200AFB4E6 /* UIColor+Theme.m in Sources */,
 				4CD3DF6D1E8D6C7000E91F19 /* AppDelegate.m in Sources */,
 				4CD3DF6A1E8D6C7000E91F19 /* main.m in Sources */,
 				4CA246C01EA7682400356B91 /* RKDropdownAlert.m in Sources */,
-				4C6AD8731EF03947000F4B77 /* NTCornerRadiusImage.m in Sources */,
 				4CD3E0271E93BA0300E91F19 /* NTGiftCell.m in Sources */,
 				4CD3DF811E8D6D6600E91F19 /* NTMainViewController.m in Sources */,
 				4C96FC311EB0A8DD00AFB4E6 /* NTDetailViewController.m in Sources */,
@@ -570,6 +570,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CJS444RRKW;
 				INFOPLIST_FILE = GiftyApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikitateslyuk.dev.GiftyApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -584,6 +585,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CJS444RRKW;
 				INFOPLIST_FILE = GiftyApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikitateslyuk.dev.GiftyApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";

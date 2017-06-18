@@ -39,7 +39,7 @@
     label.adjustsFontSizeToFitWidth = YES;
     label.textAlignment = NSTextAlignmentCenter;
     self.navigationItem.titleView = label;
-    
+
 }
 
 - (void)viewDidAppear:(BOOL)animated {
