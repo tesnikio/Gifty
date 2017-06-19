@@ -227,7 +227,6 @@
                      textColor:[UIColor whiteColor]
                           time:1
                       delegate:self];
-        
     }
     
 }

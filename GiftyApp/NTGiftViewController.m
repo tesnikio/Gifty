@@ -37,7 +37,6 @@ static NSString * const reuseIdentifier = @"GiftCell";
     
     UICollectionViewFlowLayout *layout = (UICollectionViewFlowLayout *)self.collectionViewLayout;
     
-    //layout.sectionInset = UIEdgeInsetsMake(12.f, 12.f, 60.f, 10.f);
     layout.itemSize = CGSizeMake(width, width);
     
     NTGift *gift = [[NTGift alloc] init];
