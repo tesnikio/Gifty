@@ -42,17 +42,17 @@
 		05B4251C0707950054510BA42F9BC63A /* CZPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CZPickerView.m; path = Pod/Classes/CZPickerView.m; sourceTree = "<group>"; };
 		0AD989919A0950950D4D24FF4013EF6C /* ZFModalTransitionAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZFModalTransitionAnimator.h; path = Classes/ZFModalTransitionAnimator.h; sourceTree = "<group>"; };
 		13E8EBFB109C62F3408AAA80FAA1A4DC /* CZPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CZPickerView.h; path = Pod/Classes/CZPickerView.h; sourceTree = "<group>"; };
-		360326176248982453268BA93A3A1346 /* libPods-GiftyApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-GiftyApp.a"; path = "libPods-GiftyApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		45B8402735AA3841507726AD133FAD1C /* libCZPicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libCZPicker.a; path = libCZPicker.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		360326176248982453268BA93A3A1346 /* libPods-GiftyApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GiftyApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45B8402735AA3841507726AD133FAD1C /* libCZPicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCZPicker.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		56D750976D262AE6E06D7899122F62C6 /* Pods-GiftyApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GiftyApp-resources.sh"; sourceTree = "<group>"; };
 		5E63D4F1E3D2E4FB9F9114AA280024ED /* Pods-GiftyApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GiftyApp-acknowledgements.markdown"; sourceTree = "<group>"; };
-		697A4AB83A58BC3F46ABC73780BEB840 /* libZFDragableModalTransition.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libZFDragableModalTransition.a; path = libZFDragableModalTransition.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		697A4AB83A58BC3F46ABC73780BEB840 /* libZFDragableModalTransition.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libZFDragableModalTransition.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		77408E589B0FCCCFB9974DA7212108EE /* ZFDragableModalTransition-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZFDragableModalTransition-prefix.pch"; sourceTree = "<group>"; };
 		87DE986A1C4346275FEBE2D5C682E76D /* Pods-GiftyApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GiftyApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		896A2322544B88DA26B07F67A1451841 /* CZPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CZPicker.h; path = Pod/Classes/CZPicker.h; sourceTree = "<group>"; };
 		8C76CB3DF1515095DE94AD256B7E7F8B /* ZFDragableModalTransition-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZFDragableModalTransition-dummy.m"; sourceTree = "<group>"; };
 		90F350F2BD0B19751AC2991E64C917A7 /* Pods-GiftyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GiftyApp.release.xcconfig"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9CC5B773B75382B297F70D8861AF13AF /* CZPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CZPicker-prefix.pch"; sourceTree = "<group>"; };
 		AF387AA5AE632A7DB61F6FE907137B74 /* Pods-GiftyApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GiftyApp-frameworks.sh"; sourceTree = "<group>"; };
 		B555F679F89A56A4E1F4CF3F81FA753F /* ZFModalTransitionAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZFModalTransitionAnimator.m; path = Classes/ZFModalTransitionAnimator.m; sourceTree = "<group>"; };
@@ -102,7 +102,6 @@
 				05B4251C0707950054510BA42F9BC63A /* CZPickerView.m */,
 				59A52DFBA5313E49B9DC2A22620271F1 /* Support Files */,
 			);
-			name = CZPicker;
 			path = CZPicker;
 			sourceTree = "<group>";
 		};
@@ -184,7 +183,6 @@
 				B555F679F89A56A4E1F4CF3F81FA753F /* ZFModalTransitionAnimator.m */,
 				F7BD1AC619907E868DB03FAF45A42E53 /* Support Files */,
 			);
-			name = ZFDragableModalTransition;
 			path = ZFDragableModalTransition;
 			sourceTree = "<group>";
 		};
@@ -291,7 +289,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0900;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -367,7 +365,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -375,15 +375,21 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
@@ -461,7 +467,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -469,14 +477,20 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
@@ -506,7 +520,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/ZFDragableModalTransition/ZFDragableModalTransition-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -529,7 +543,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/ZFDragableModalTransition/ZFDragableModalTransition-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
