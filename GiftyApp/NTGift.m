@@ -23,11 +23,10 @@
     }
         
     return gifts;
-        
 }
 
-- (id)initWithCaption:(NSString *) caption andImage:(UIImage *) image includingDescription:(NSString *) descriprion
-{
+- (id)initWithCaption:(NSString *) caption andImage:(UIImage *) image includingDescription:(NSString *) descriprion {
+
     self = [super init];
     if (self) {
         
@@ -39,8 +38,7 @@
     return self;
 }
 
-- (id)initWithDictionary:(NSDictionary *) dictionary
-{
+- (id)initWithDictionary:(NSDictionary *) dictionary {
     
     NSString *caption = [dictionary objectForKey:@"Caption"];
     NSString *descriptionText = [dictionary objectForKey:@"Description"];
