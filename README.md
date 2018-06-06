@@ -1,6 +1,6 @@
 <img src="icon.png" align="right" />
 
-# Gifty [![Gifty]
+# Gifty 
 > A curated list of awesome READMEs
 
 ## Tools
@@ -26,9 +26,3 @@ Embedding an animated gif in your README quickly demonstrates what your project 
 
 Contributions are always welcome!
 Please read the [contribution guidelines](contributing.md) first.
-
-## License
-
-[![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
-
-To the extent possible under law, [Matias Singers](http://mts.io) has waived all copyright and related or neighboring rights to this work.
