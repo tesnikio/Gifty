@@ -11,11 +11,9 @@
 @implementation NTCornerRadiusImage
 
 - (void)layoutSubviews {
-    
-    [super layoutSubviews];
-    
-    self.layer.cornerRadius = self.bounds.size.height / 2.f;
-    
+  [super layoutSubviews];
+  
+  self.layer.cornerRadius = self.bounds.size.height / 2.f;
 }
 
 @end
