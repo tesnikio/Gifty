@@ -13,7 +13,6 @@
 - (NSMutableArray *) giftsWithAgeCategory:(NSString *) ageCategory {
   
   NSMutableArray *gifts = [NSMutableArray array];
-  
   NSURL *URL = [[NSBundle mainBundle] URLForResource:ageCategory withExtension:@"plist"];
   NSArray *giftsFromPlist = [NSArray arrayWithContentsOfURL:URL];
   
@@ -23,7 +22,6 @@
   }
   
   return gifts;
-  
 }
 
 - (id)initWithCaption:(NSString *) caption andImage:(UIImage *) image includingDescription:(NSString *) descriprion {

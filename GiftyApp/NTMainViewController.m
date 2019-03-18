@@ -26,63 +26,47 @@
 #pragma mark - Lifecycle
 
 - (void)viewWillAppear:(BOOL)animated {
-  
   [self.navigationController setNavigationBarHidden:YES animated:YES];
-  
   [super viewWillAppear:animated];
-  
 }
 
 - (void)viewDidLoad {
-  
   [super viewDidLoad];
   
   self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
-  
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
-  
   [self.navigationController setNavigationBarHidden:NO animated:YES];
-  
   [super viewDidDisappear:animated];
 }
 
 #pragma mark - RKDropdownAlertDelegate
 
 - (BOOL)dropdownAlertWasTapped:(RKDropdownAlert *)alert {
-  
   return YES;
-  
 }
 
 - (BOOL)dropdownAlertWasDismissed {
-  
   return YES;
-  
 }
 
 #pragma mark - Navigation
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-  
   if ([segue.identifier isEqualToString:@"showGifts"]) {
-    
     NTGiftViewController *vc = segue.destinationViewController;
     vc.sexFieldText = self.sexField.text;
     vc.ageValue = self.ageValue;
     vc.occasionFieldText = self.occasionField.text;
-    
   }
 }
 
 - (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
   
   if (([self.sexField.text isEqualToString:@""] || [self.ageField.text isEqualToString:@""] || [self.occasionField.text isEqualToString:@""]) && [identifier isEqualToString:@"showGifts"]) {
-    
     return NO;
   }
-  
   return YES;
 }
 
@@ -91,7 +75,6 @@
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
   
   if ([textField isEqual:self.sexField]) {
-    
     self.sexPicker = [[CZPickerView alloc] initWithHeaderTitle:@"Пол" cancelButtonTitle:@"Cancel" confirmButtonTitle:@"Confirm"];
     self.sexPicker.headerBackgroundColor = [UIColor whiteColor];
     self.sexPicker.headerTitleColor = [UIColor themeColor];
@@ -104,7 +87,6 @@
     return NO;
     
   } else if ([textField isEqual:self.ageField]) {
-    
     self.agePicker = [[CZPickerView alloc] initWithHeaderTitle:@"Возраст" cancelButtonTitle:@"Cancel" confirmButtonTitle:@"Confirm"];
     self.agePicker.headerBackgroundColor = [UIColor whiteColor];
     self.agePicker.headerTitleColor = [UIColor themeColor];
@@ -117,7 +99,6 @@
     return NO;
     
   } else if ([textField isEqual:self.occasionField]) {
-    
     self.occasionPicker = [[CZPickerView alloc] initWithHeaderTitle:@"Событие" cancelButtonTitle:@"Cancel" confirmButtonTitle:@"Confirm"];
     self.occasionPicker.headerBackgroundColor = [UIColor whiteColor];
     self.occasionPicker.headerTitleColor = [UIColor themeColor];
@@ -129,7 +110,6 @@
     
     return NO;
   }
-  
   return YES;
 }
 
@@ -148,11 +128,9 @@
   return 0;
 }
 
-- (NSAttributedString *)czpickerView:(CZPickerView *)pickerView
-               attributedTitleForRow:(NSInteger)row {
+- (NSAttributedString *)czpickerView:(CZPickerView *)pickerView attributedTitleForRow:(NSInteger)row {
   
   NSAttributedString *title = nil;
-  
   if ([pickerView isEqual:self.sexPicker]) {
     
     switch (row) {
@@ -170,7 +148,6 @@
     }
     
   } else if ([pickerView isEqual:self.agePicker]) {
-    
     title = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"%ld", row + 1] attributes:@{ NSFontAttributeName : [UIFont fontWithName:@"Avenir Next" size:18.f] }];
     
     return title;
@@ -217,9 +194,7 @@
 #pragma mark - Actions
 
 - (IBAction)searchButtonAction:(UIButton *)sender {
-  
   if ([self.sexField.text isEqualToString:@""] || [self.ageField.text isEqualToString:@""] || [self.occasionField.text isEqualToString:@""]) {
-    
     [RKDropdownAlert title:@"Ошибка!"
                    message:@"Заполните все поля для ввода!"
            backgroundColor:[UIColor themeColor]
@@ -227,7 +202,6 @@
                       time:1
                   delegate:self];
   }
-  
 }
 
 @end
