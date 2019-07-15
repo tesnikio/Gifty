@@ -7,7 +7,7 @@ target 'GiftyApp' do
 
   # Pods for GiftyApp
 
-pod "CZPicker"
-pod "ZFDragableModalTransition"
+	pod "CZPicker"
+	pod "ZFDragableModalTransition"
 
 end

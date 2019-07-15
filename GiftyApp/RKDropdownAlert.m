@@ -75,7 +75,7 @@ NSString *DEFAULT_TITLE;
                                                      name:RKDropdownAlertDismissAllNotification
                                                    object:nil];
         self.isShowing = NO;
-
+        
     }
     return self;
 }
